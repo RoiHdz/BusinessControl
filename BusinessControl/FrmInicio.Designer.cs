@@ -259,7 +259,7 @@
             // lblCargo
             // 
             this.lblCargo.AutoSize = true;
-            this.lblCargo.Location = new System.Drawing.Point(88, 56);
+            this.lblCargo.Location = new System.Drawing.Point(88, 70);
             this.lblCargo.Name = "lblCargo";
             this.lblCargo.Size = new System.Drawing.Size(41, 16);
             this.lblCargo.TabIndex = 11;
@@ -268,7 +268,7 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(88, 31);
+            this.lblUsuario.Location = new System.Drawing.Point(88, 41);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(41, 16);
             this.lblUsuario.TabIndex = 10;
@@ -277,7 +277,7 @@
             // lblNombre_U
             // 
             this.lblNombre_U.AutoSize = true;
-            this.lblNombre_U.Location = new System.Drawing.Point(88, 6);
+            this.lblNombre_U.Location = new System.Drawing.Point(88, 3);
             this.lblNombre_U.Name = "lblNombre_U";
             this.lblNombre_U.Size = new System.Drawing.Size(41, 16);
             this.lblNombre_U.TabIndex = 9;
