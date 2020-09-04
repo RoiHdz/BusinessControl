@@ -42,7 +42,6 @@
             this.BtnCliente = new System.Windows.Forms.Button();
             this.pnlDatos = new System.Windows.Forms.Panel();
             this.lblCargo = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
             this.lblNombre_U = new System.Windows.Forms.Label();
             this.horafecha = new System.Windows.Forms.Timer(this.components);
             this.lblFecha = new System.Windows.Forms.Label();
@@ -247,7 +246,6 @@
             // pnlDatos
             // 
             this.pnlDatos.Controls.Add(this.lblCargo);
-            this.pnlDatos.Controls.Add(this.lblUsuario);
             this.pnlDatos.Controls.Add(this.lblNombre_U);
             this.pnlDatos.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlDatos.Location = new System.Drawing.Point(0, 0);
@@ -263,15 +261,6 @@
             this.lblCargo.Size = new System.Drawing.Size(41, 16);
             this.lblCargo.TabIndex = 11;
             this.lblCargo.Text = "label4";
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(88, 36);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(66, 16);
-            this.lblUsuario.TabIndex = 10;
-            this.lblUsuario.Text = "hjgfthjgfjgh";
             // 
             // lblNombre_U
             // 
@@ -386,7 +375,7 @@
             this.btnConectar.Image = global::BusinessControl.Properties.Resources.high_wifi_signal_indicator;
             this.btnConectar.Name = "btnConectar";
             this.btnConectar.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnConectar.Size = new System.Drawing.Size(118, 22);
+            this.btnConectar.Size = new System.Drawing.Size(119, 22);
             this.btnConectar.Text = "Probar conexion";
             this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click);
             // 
@@ -466,7 +455,6 @@
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Button BtnLogOut;
         private System.Windows.Forms.Label lblCargo;
-        private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblNombre_U;
         private System.Windows.Forms.Panel PanelClientes_SubMenu;
         private System.Windows.Forms.Button BtnProveedor;
