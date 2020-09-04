@@ -44,7 +44,6 @@
             this.lblCargo = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblNombre_U = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.horafecha = new System.Windows.Forms.Timer(this.components);
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
@@ -60,7 +59,6 @@
             this.PanelMenu.SuspendLayout();
             this.PanelClientes_SubMenu.SuspendLayout();
             this.pnlDatos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -249,7 +247,6 @@
             this.pnlDatos.Controls.Add(this.lblCargo);
             this.pnlDatos.Controls.Add(this.lblUsuario);
             this.pnlDatos.Controls.Add(this.lblNombre_U);
-            this.pnlDatos.Controls.Add(this.pictureBox3);
             this.pnlDatos.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlDatos.Location = new System.Drawing.Point(0, 0);
             this.pnlDatos.Name = "pnlDatos";
@@ -282,16 +279,6 @@
             this.lblNombre_U.Size = new System.Drawing.Size(41, 16);
             this.lblNombre_U.TabIndex = 9;
             this.lblNombre_U.Text = "label2";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::BusinessControl.Properties.Resources.user_shape1;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 20);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(58, 66);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
             // 
             // horafecha
             // 
@@ -397,7 +384,7 @@
             this.btnConectar.Image = global::BusinessControl.Properties.Resources.high_wifi_signal_indicator;
             this.btnConectar.Name = "btnConectar";
             this.btnConectar.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnConectar.Size = new System.Drawing.Size(119, 22);
+            this.btnConectar.Size = new System.Drawing.Size(118, 22);
             this.btnConectar.Text = "Probar conexion";
             this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click);
             // 
@@ -444,7 +431,6 @@
             this.PanelClientes_SubMenu.ResumeLayout(false);
             this.pnlDatos.ResumeLayout(false);
             this.pnlDatos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
@@ -466,7 +452,6 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Button BtnLogOut;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblCargo;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblNombre_U;
