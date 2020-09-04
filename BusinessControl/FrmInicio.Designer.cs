@@ -288,7 +288,7 @@
             this.pictureBox3.Image = global::BusinessControl.Properties.Resources.user_shape1;
             this.pictureBox3.Location = new System.Drawing.Point(12, 6);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(58, 66);
+            this.pictureBox3.Size = new System.Drawing.Size(58, 80);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
