@@ -267,11 +267,11 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(88, 41);
+            this.lblUsuario.Location = new System.Drawing.Point(88, 36);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(41, 16);
+            this.lblUsuario.Size = new System.Drawing.Size(66, 16);
             this.lblUsuario.TabIndex = 10;
-            this.lblUsuario.Text = "label3";
+            this.lblUsuario.Text = "hjgfthjgfjgh";
             // 
             // lblNombre_U
             // 
