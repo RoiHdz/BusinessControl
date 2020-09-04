@@ -56,6 +56,7 @@
             this.btnConectar = new System.Windows.Forms.ToolStripButton();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.PanelContenedor = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.PanelMenu.SuspendLayout();
             this.PanelClientes_SubMenu.SuspendLayout();
             this.pnlDatos.SuspendLayout();
@@ -65,6 +66,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
             this.panel1.SuspendLayout();
             this.toolStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelMenu
@@ -256,7 +258,7 @@
             // lblCargo
             // 
             this.lblCargo.AutoSize = true;
-            this.lblCargo.Location = new System.Drawing.Point(88, 56);
+            this.lblCargo.Location = new System.Drawing.Point(88, 70);
             this.lblCargo.Name = "lblCargo";
             this.lblCargo.Size = new System.Drawing.Size(41, 16);
             this.lblCargo.TabIndex = 11;
@@ -265,7 +267,7 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(88, 31);
+            this.lblUsuario.Location = new System.Drawing.Point(88, 41);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(41, 16);
             this.lblUsuario.TabIndex = 10;
@@ -274,7 +276,7 @@
             // lblNombre_U
             // 
             this.lblNombre_U.AutoSize = true;
-            this.lblNombre_U.Location = new System.Drawing.Point(88, 6);
+            this.lblNombre_U.Location = new System.Drawing.Point(88, 20);
             this.lblNombre_U.Name = "lblNombre_U";
             this.lblNombre_U.Size = new System.Drawing.Size(41, 16);
             this.lblNombre_U.TabIndex = 9;
@@ -409,6 +411,16 @@
             this.PanelContenedor.Size = new System.Drawing.Size(1057, 616);
             this.PanelContenedor.TabIndex = 8;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::BusinessControl.Properties.Resources.user_shape1;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 20);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(58, 66);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -439,6 +451,7 @@
             this.panel1.PerformLayout();
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,6 +485,7 @@
         private System.Windows.Forms.ToolStripButton btnConectar;
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.Panel PanelContenedor;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 
