@@ -55,7 +55,6 @@
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.PanelContenedor = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.PanelMenu.SuspendLayout();
             this.PanelClientes_SubMenu.SuspendLayout();
             this.pnlDatos.SuspendLayout();
@@ -245,7 +244,6 @@
             // 
             // pnlDatos
             // 
-            this.pnlDatos.Controls.Add(this.label2);
             this.pnlDatos.Controls.Add(this.lblCargo);
             this.pnlDatos.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlDatos.Location = new System.Drawing.Point(0, 0);
@@ -401,15 +399,6 @@
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(91, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 16);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "label2";
-            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -473,7 +462,6 @@
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.Panel PanelContenedor;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label2;
     }
 }
 
