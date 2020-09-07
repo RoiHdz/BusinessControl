@@ -33,7 +33,6 @@
             this.txtPrimerApellido = new System.Windows.Forms.TextBox();
             this.txtSegundoApellido = new System.Windows.Forms.TextBox();
             this.MenuSuperior = new System.Windows.Forms.ToolStrip();
-            this.BtnCerrar = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,7 +44,6 @@
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.BtnMostrarMas = new System.Windows.Forms.PictureBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.Panel_NumTelefono_SubMenu = new System.Windows.Forms.Panel();
@@ -57,9 +55,11 @@
             this.txtTelefono1 = new System.Windows.Forms.MaskedTextBox();
             this.CmbEstado = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.BtnMostrarMas = new System.Windows.Forms.PictureBox();
+            this.BtnCerrar = new System.Windows.Forms.ToolStripButton();
             this.MenuSuperior.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMostrarMas)).BeginInit();
             this.Panel_NumTelefono_SubMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMostrarMas)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPrimerNombre
@@ -106,17 +106,6 @@
             this.MenuSuperior.Text = "toolStrip1";
             this.MenuSuperior.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuSuperior_ItemClicked);
             this.MenuSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MenuSuperior_MouseDown);
-            // 
-            // BtnCerrar
-            // 
-            this.BtnCerrar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.BtnCerrar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.BtnCerrar.Image = global::BusinessControl.Properties.Resources.close_button;
-            this.BtnCerrar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(23, 22);
-            this.BtnCerrar.Text = "Salir";
-            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // toolStripLabel1
             // 
@@ -228,23 +217,11 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(264, 165);
+            this.label8.Location = new System.Drawing.Point(262, 165);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(68, 16);
             this.label8.TabIndex = 16;
             this.label8.Text = "Telefono: ";
-            // 
-            // BtnMostrarMas
-            // 
-            this.BtnMostrarMas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.BtnMostrarMas.Image = global::BusinessControl.Properties.Resources.add_button_inside_black_circle;
-            this.BtnMostrarMas.Location = new System.Drawing.Point(347, 183);
-            this.BtnMostrarMas.Name = "BtnMostrarMas";
-            this.BtnMostrarMas.Size = new System.Drawing.Size(21, 22);
-            this.BtnMostrarMas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BtnMostrarMas.TabIndex = 17;
-            this.BtnMostrarMas.TabStop = false;
-            this.BtnMostrarMas.Click += new System.EventHandler(this.BtnMostrarMas_Click);
             // 
             // txtCorreo
             // 
@@ -348,6 +325,29 @@
             this.button2.Text = "Actualizar";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // BtnMostrarMas
+            // 
+            this.BtnMostrarMas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BtnMostrarMas.Image = global::BusinessControl.Properties.Resources.add_button_inside_black_circle;
+            this.BtnMostrarMas.Location = new System.Drawing.Point(347, 183);
+            this.BtnMostrarMas.Name = "BtnMostrarMas";
+            this.BtnMostrarMas.Size = new System.Drawing.Size(21, 22);
+            this.BtnMostrarMas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnMostrarMas.TabIndex = 17;
+            this.BtnMostrarMas.TabStop = false;
+            this.BtnMostrarMas.Click += new System.EventHandler(this.BtnMostrarMas_Click);
+            // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.BtnCerrar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnCerrar.Image = global::BusinessControl.Properties.Resources.close_button;
+            this.BtnCerrar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(23, 22);
+            this.BtnCerrar.Text = "Salir";
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            // 
             // FrmClientePE_hijo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -387,9 +387,9 @@
             this.Load += new System.EventHandler(this.FrmClientePE_hijo_Load);
             this.MenuSuperior.ResumeLayout(false);
             this.MenuSuperior.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMostrarMas)).EndInit();
             this.Panel_NumTelefono_SubMenu.ResumeLayout(false);
             this.Panel_NumTelefono_SubMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMostrarMas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

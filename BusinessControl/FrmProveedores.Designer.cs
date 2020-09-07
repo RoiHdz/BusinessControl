@@ -39,7 +39,6 @@
             this.lblDireccion = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.lblEstado = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtDui = new System.Windows.Forms.MaskedTextBox();
             this.txtTelefono1 = new System.Windows.Forms.MaskedTextBox();
@@ -48,6 +47,7 @@
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.MenuSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,7 +85,7 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(32, 48);
+            this.lblNombre.Location = new System.Drawing.Point(212, 47);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(127, 16);
             this.lblNombre.TabIndex = 5;
@@ -93,7 +93,7 @@
             // 
             // txtPrimerNombre
             // 
-            this.txtPrimerNombre.Location = new System.Drawing.Point(35, 68);
+            this.txtPrimerNombre.Location = new System.Drawing.Point(215, 67);
             this.txtPrimerNombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPrimerNombre.Name = "txtPrimerNombre";
             this.txtPrimerNombre.Size = new System.Drawing.Size(169, 21);
@@ -104,7 +104,7 @@
             this.lblNIF.AutoSize = true;
             this.lblNIF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.lblNIF.ForeColor = System.Drawing.Color.White;
-            this.lblNIF.Location = new System.Drawing.Point(280, 47);
+            this.lblNIF.Location = new System.Drawing.Point(32, 47);
             this.lblNIF.Name = "lblNIF";
             this.lblNIF.Size = new System.Drawing.Size(32, 16);
             this.lblNIF.TabIndex = 7;
@@ -116,7 +116,7 @@
             this.lblCorreo.AutoSize = true;
             this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.lblCorreo.ForeColor = System.Drawing.Color.White;
-            this.lblCorreo.Location = new System.Drawing.Point(486, 47);
+            this.lblCorreo.Location = new System.Drawing.Point(32, 106);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.Size = new System.Drawing.Size(52, 16);
             this.lblCorreo.TabIndex = 9;
@@ -124,7 +124,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(489, 67);
+            this.textBox1.Location = new System.Drawing.Point(35, 126);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(169, 21);
@@ -135,7 +135,7 @@
             this.lblDireccion.AutoSize = true;
             this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.lblDireccion.ForeColor = System.Drawing.Color.White;
-            this.lblDireccion.Location = new System.Drawing.Point(32, 117);
+            this.lblDireccion.Location = new System.Drawing.Point(409, 44);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(68, 16);
             this.lblDireccion.TabIndex = 11;
@@ -143,10 +143,10 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(35, 137);
+            this.textBox2.Location = new System.Drawing.Point(409, 64);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(275, 21);
+            this.textBox2.Size = new System.Drawing.Size(259, 21);
             this.textBox2.TabIndex = 12;
             // 
             // lblEstado
@@ -154,27 +154,18 @@
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.lblEstado.ForeColor = System.Drawing.Color.White;
-            this.lblEstado.Location = new System.Drawing.Point(32, 190);
+            this.lblEstado.Location = new System.Drawing.Point(307, 106);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(54, 16);
             this.lblEstado.TabIndex = 13;
             this.lblEstado.Text = "Estado:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(35, 209);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(282, 21);
-            this.textBox3.TabIndex = 14;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(393, 117);
+            this.label1.Location = new System.Drawing.Point(339, 169);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 16);
             this.label1.TabIndex = 15;
@@ -183,7 +174,7 @@
             // 
             // txtDui
             // 
-            this.txtDui.Location = new System.Drawing.Point(283, 67);
+            this.txtDui.Location = new System.Drawing.Point(35, 67);
             this.txtDui.Mask = "00000000-0";
             this.txtDui.Name = "txtDui";
             this.txtDui.Size = new System.Drawing.Size(144, 21);
@@ -191,7 +182,7 @@
             // 
             // txtTelefono1
             // 
-            this.txtTelefono1.Location = new System.Drawing.Point(396, 137);
+            this.txtTelefono1.Location = new System.Drawing.Point(452, 188);
             this.txtTelefono1.Mask = "0000-0000";
             this.txtTelefono1.Name = "txtTelefono1";
             this.txtTelefono1.Size = new System.Drawing.Size(74, 21);
@@ -199,7 +190,7 @@
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(502, 137);
+            this.maskedTextBox1.Location = new System.Drawing.Point(354, 188);
             this.maskedTextBox1.Mask = "0000-0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(74, 21);
@@ -210,7 +201,7 @@
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.lblDescripcion.ForeColor = System.Drawing.Color.White;
-            this.lblDescripcion.Location = new System.Drawing.Point(373, 190);
+            this.lblDescripcion.Location = new System.Drawing.Point(32, 169);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(83, 16);
             this.lblDescripcion.TabIndex = 20;
@@ -218,14 +209,14 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(376, 209);
+            this.txtDescripcion.Location = new System.Drawing.Point(35, 188);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(250, 21);
             this.txtDescripcion.TabIndex = 21;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(452, 246);
+            this.btnAgregar.Location = new System.Drawing.Point(439, 235);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(99, 41);
             this.btnAgregar.TabIndex = 27;
@@ -234,19 +225,28 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(569, 246);
+            this.button2.Location = new System.Drawing.Point(569, 235);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 41);
             this.button2.TabIndex = 33;
             this.button2.Text = "Actualizar";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(310, 126);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(272, 24);
+            this.comboBox3.TabIndex = 36;
+            // 
             // FrmProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.ClientSize = new System.Drawing.Size(690, 299);
+            this.ClientSize = new System.Drawing.Size(690, 285);
+            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtDescripcion);
@@ -255,7 +255,6 @@
             this.Controls.Add(this.txtTelefono1);
             this.Controls.Add(this.txtDui);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.lblDireccion);
@@ -290,7 +289,6 @@
         private System.Windows.Forms.Label lblDireccion;
         public System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label lblEstado;
-        public System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.MaskedTextBox txtDui;
         public System.Windows.Forms.MaskedTextBox txtTelefono1;
@@ -299,5 +297,6 @@
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }

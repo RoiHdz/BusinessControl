@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controlador;
 
 namespace BusinessControl
 {
@@ -16,5 +17,34 @@ namespace BusinessControl
         {
             InitializeComponent();
         }
+
+        private void DgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            FrmProveedores Frm = new FrmProveedores();
+            Frm.ShowDialog();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            FrmProveedores Frm = new FrmProveedores();
+            Frm.ShowDialog();
+        }
+        private void FrmProveedor_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                DgvClientes.DataSource = MainController.Cargar_Cliente();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
     }
 }

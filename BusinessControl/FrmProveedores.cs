@@ -15,6 +15,7 @@ namespace BusinessControl
         public FrmProveedores()
         {
             InitializeComponent();
+
         }
 
         private void lblNIF_Click(object sender, EventArgs e)
