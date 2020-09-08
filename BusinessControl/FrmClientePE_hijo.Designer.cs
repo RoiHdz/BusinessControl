@@ -33,6 +33,7 @@
             this.txtPrimerApellido = new System.Windows.Forms.TextBox();
             this.txtSegundoApellido = new System.Windows.Forms.TextBox();
             this.MenuSuperior = new System.Windows.Forms.ToolStrip();
+            this.BtnCerrar = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,7 +57,6 @@
             this.CmbEstado = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.BtnMostrarMas = new System.Windows.Forms.PictureBox();
-            this.BtnCerrar = new System.Windows.Forms.ToolStripButton();
             this.MenuSuperior.SuspendLayout();
             this.Panel_NumTelefono_SubMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMostrarMas)).BeginInit();
@@ -106,6 +106,17 @@
             this.MenuSuperior.Text = "toolStrip1";
             this.MenuSuperior.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuSuperior_ItemClicked);
             this.MenuSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MenuSuperior_MouseDown);
+            // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.BtnCerrar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnCerrar.Image = global::BusinessControl.Properties.Resources.close_button;
+            this.BtnCerrar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(23, 22);
+            this.BtnCerrar.Text = "Salir";
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // toolStripLabel1
             // 
@@ -191,7 +202,8 @@
             // dtpFechaNacimiento
             // 
             this.dtpFechaNacimiento.CalendarFont = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaNacimiento.CustomFormat = "yyyy-MM-dd";
+            this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFechaNacimiento.Location = new System.Drawing.Point(14, 130);
             this.dtpFechaNacimiento.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtpFechaNacimiento.MaxDate = new System.DateTime(2060, 12, 31, 0, 0, 0, 0);
@@ -200,6 +212,7 @@
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(169, 21);
             this.dtpFechaNacimiento.TabIndex = 5;
             this.dtpFechaNacimiento.Value = new System.DateTime(2020, 7, 19, 0, 0, 0, 0);
+            this.dtpFechaNacimiento.ValueChanged += new System.EventHandler(this.dtpFechaNacimiento_ValueChanged);
             // 
             // label7
             // 
@@ -336,17 +349,6 @@
             this.BtnMostrarMas.TabIndex = 17;
             this.BtnMostrarMas.TabStop = false;
             this.BtnMostrarMas.Click += new System.EventHandler(this.BtnMostrarMas_Click);
-            // 
-            // BtnCerrar
-            // 
-            this.BtnCerrar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.BtnCerrar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.BtnCerrar.Image = global::BusinessControl.Properties.Resources.close_button;
-            this.BtnCerrar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(23, 22);
-            this.BtnCerrar.Text = "Salir";
-            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // FrmClientePE_hijo
             // 

@@ -55,11 +55,11 @@ namespace Modelo
             }
         }
         //Registrar los datos ingresados en el formulario
-        public static bool registrarCliente(string PrimerNombre, string SegundNombre, string PrimerApellido, string SegundoApellido, string dui, string correo, string direccion, int estado) {
+        public static bool registrarCliente(string PrimerNombre, string SegundNombre, string PrimerApellido, string SegundoApellido, string fecha_nacimiento, string dui, string correo, string direccion, int estado) {
             bool retorno;
             try
             {
-                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbCliente_Persona (DUI, Nombre1, Nombre2, Apellido1, Apellido2, Direccion, Correo, idEstado_ClienteP) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')", dui, PrimerNombre, SegundNombre, PrimerApellido, SegundoApellido, direccion, correo, estado), Conexion.getConnect());
+                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbCliente_Persona (DUI, Nombre1, Nombre2, Apellido1, Apellido2, Fecha_Nacimineto, Direccion, Correo, idEstado_ClienteP) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}')", dui, PrimerNombre, SegundNombre, PrimerApellido, SegundoApellido, fecha_nacimiento, direccion, correo, estado), Conexion.getConnect());
                 retorno = Convert.ToBoolean(cmdinsert.ExecuteNonQuery());
                 return retorno;
             }
