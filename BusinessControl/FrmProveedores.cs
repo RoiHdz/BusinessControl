@@ -88,5 +88,53 @@ namespace BusinessControl
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            EnvioDatos();
+        }
+       
+        private void FrmProveedores_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                comboBox3.DataSource = ProveedoresController.Cargar_Proveedores();
+                comboBox3.DisplayMember = "Estado";
+                comboBox3.ValueMember = "idEstado_ClienteP";
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        void EnvioDatos()
+        {
+            ProveedoresController agregar = new ProveedoresController();
+            agregar.DUI = txtDui.Text;
+            agregar.NombreProveedor = txtPrimerNombre.Text;
+            agregar.Direccion = textBox2.Text;
+            agregar.CorreoProveedor = textBox1.Text;
+            agregar.Descripcion = txtDescripcion.Text;
+            agregar.EstadoProveedor = Convert.ToInt16(comboBox3.SelectedValue);
+            if (agregar.EnviarDatos_Controller() == false)
+            {
+                MessageBox.Show("El usuario no puedo ser ingresado", "Advertencia", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                LimpiarCampos();
+            }
+        }
+       
+        void LimpiarCampos()
+        {
+            txtDui.Clear();
+            txtPrimerNombre.Clear();
+            textBox2.Clear();
+            textBox1.Clear();
+            txtDescripcion.Clear();
+
+        }
     }
 }
