@@ -86,6 +86,7 @@ namespace BusinessControl
             agregar.dui = txtDui.Text;
             agregar.Correo = txtCorreo.Text;
             agregar.direccion = txtDireccion.Text;
+            agregar.FechaNacimiento = dtpFechaNacimiento.Text;
             agregar.Estado = Convert.ToInt16(CmbEstado.SelectedValue);
             if (agregar.EnviarDatos_Controlle() == false)
             {
@@ -119,6 +120,11 @@ namespace BusinessControl
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void dtpFechaNacimiento_ValueChanged(object sender, EventArgs e)
+        {
+
         }
 
         ////////////////////////////////////////////////////////////

@@ -32,14 +32,14 @@ namespace Controlador
         public string SegundoNombre { get; set; }
         public string PrimerApellido { get; set; }
         public string SegundoApellido { get; set; }
-        //public DateTime FechaNacimiento { get; set; }
+        public string FechaNacimiento { get; set; }
         public string direccion { get; set; }
         public string Correo { get; set; }
         public int Estado { get; set; }
         //Constructor
         public MainController() {}
         public bool EnviarDatos_Controlle() {
-            return ModeloClienteP.registrarCliente(PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido, dui, Correo, direccion, Estado);
+            return ModeloClienteP.registrarCliente(PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido, FechaNacimiento,dui, Correo, direccion, Estado);
         }
     }
 }
