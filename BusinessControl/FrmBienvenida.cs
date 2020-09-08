@@ -43,5 +43,10 @@ namespace BusinessControl
                 this.Close();
             }
         }
+
+        private void LoadingGif_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
