@@ -46,7 +46,7 @@
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.Panel_NumTelefono_SubMenu = new System.Windows.Forms.Panel();
             this.txtTelefono2 = new System.Windows.Forms.MaskedTextBox();
             this.BtnMostrarMas = new System.Windows.Forms.PictureBox();
@@ -233,13 +233,13 @@
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
             // 
-            // comboBox3
+            // cmbEstado
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(35, 126);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(201, 24);
-            this.comboBox3.TabIndex = 36;
+            this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Location = new System.Drawing.Point(35, 126);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Size = new System.Drawing.Size(201, 24);
+            this.cmbEstado.TabIndex = 36;
             // 
             // Panel_NumTelefono_SubMenu
             // 
@@ -276,7 +276,7 @@
             this.ClientSize = new System.Drawing.Size(752, 297);
             this.Controls.Add(this.BtnMostrarMas);
             this.Controls.Add(this.Panel_NumTelefono_SubMenu);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cmbEstado);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtDescripcion);
@@ -329,7 +329,7 @@
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnActualizar;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbEstado;
         private System.Windows.Forms.Panel Panel_NumTelefono_SubMenu;
         public System.Windows.Forms.MaskedTextBox txtTelefono2;
         private System.Windows.Forms.PictureBox BtnMostrarMas;

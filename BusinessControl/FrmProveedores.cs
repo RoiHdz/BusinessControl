@@ -98,9 +98,9 @@ namespace BusinessControl
         {
             try
             {
-                comboBox3.DataSource = ProveedoresController.Cargar_Proveedores();
-                comboBox3.DisplayMember = "Estado";
-                comboBox3.ValueMember = "idEstado_Proveedor";
+                cmbEstado.DataSource = ProveedoresController.Cargar_EstadoProveedores();
+                cmbEstado.DisplayMember = "Estado";
+                cmbEstado.ValueMember = "idEstado_Proveedor";
             }
             catch (Exception)
             {
@@ -116,7 +116,7 @@ namespace BusinessControl
             agregar.Direccion = txtDireccion.Text;
             agregar.CorreoProveedor = txtCorreoProveedor.Text;
             agregar.Descripcion = txtDescripcion.Text;
-            agregar.EstadoProveedor = Convert.ToInt16(comboBox3.SelectedValue);
+            agregar.EstadoProveedor = Convert.ToInt16(cmbEstado.SelectedValue);
             if (agregar.EnviarDatos_Controller() == false)
             {
                 MessageBox.Show("El usuario no puedo ser ingresado", "Advertencia", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Warning);

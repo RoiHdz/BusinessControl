@@ -328,6 +328,7 @@
             this.CmbEstado.Name = "CmbEstado";
             this.CmbEstado.Size = new System.Drawing.Size(355, 24);
             this.CmbEstado.TabIndex = 10;
+            this.CmbEstado.SelectedIndexChanged += new System.EventHandler(this.CmbEstado_SelectedIndexChanged);
             // 
             // button2
             // 

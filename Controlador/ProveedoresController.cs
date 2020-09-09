@@ -15,7 +15,7 @@ namespace Controlador
         {
             return Conexion.getConnect();
         }
-        public static DataTable Cargar_Proveedores()
+        public static DataTable Cargar_EstadoProveedores()
         {
             return ModeloProveedores.CargarProveedores();
         }

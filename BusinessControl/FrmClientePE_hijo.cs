@@ -127,6 +127,11 @@ namespace BusinessControl
 
         }
 
+        private void CmbEstado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         ////////////////////////////////////////////////////////////
     }
 }
