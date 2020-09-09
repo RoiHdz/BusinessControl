@@ -93,21 +93,6 @@ namespace BusinessControl
         {
             EnvioDatos();
         }
-       
-        private void FrmProveedores_Load(object sender, EventArgs e)
-        {
-            try
-            {
-                comboBox3.DataSource = ProveedoresController.Cargar_Proveedores();
-                comboBox3.DisplayMember = "Estado";
-                comboBox3.ValueMember = "idEstado_Proveedor";
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
         void EnvioDatos()
         {
             ProveedoresController agregar = new ProveedoresController();
@@ -137,6 +122,20 @@ namespace BusinessControl
             txtTelefono1.Clear();
             txtTelefono2.Clear();
 
+        }
+
+        private void FrmProveedores_Load_1(object sender, EventArgs e)
+        {
+            try
+            {
+                comboBox3.DataSource = ProveedoresController.Cargar_Estado();
+                comboBox3.DisplayMember = "Estado";
+                comboBox3.ValueMember = "idEstado_Proveedor";
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

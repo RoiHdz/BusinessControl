@@ -299,6 +299,7 @@
             this.Name = "FrmProveedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmProveedores";
+            this.Load += new System.EventHandler(this.FrmProveedores_Load_1);
             this.MenuSuperior.ResumeLayout(false);
             this.MenuSuperior.PerformLayout();
             this.Panel_NumTelefono_SubMenu.ResumeLayout(false);

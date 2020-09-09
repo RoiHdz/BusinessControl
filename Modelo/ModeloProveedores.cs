@@ -10,7 +10,8 @@ namespace Modelo
 {
     public class ModeloProveedores
     {
-        public static DataTable CargarProveedores()
+        //Metodo para mostrar el estado del provedor
+        public static DataTable CargarEstado()
         {
             DataTable data;
             try
@@ -31,6 +32,7 @@ namespace Modelo
                 Conexion.getConnect().Close();
             }
         }
+
         public static DataTable ListaProveedores()
         {
             DataTable data;

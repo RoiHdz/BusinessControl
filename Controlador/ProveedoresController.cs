@@ -15,9 +15,10 @@ namespace Controlador
         {
             return Conexion.getConnect();
         }
-        public static DataTable Cargar_Proveedores()
+        //Metodo para mostrar los estados en el fromulario FrmProveedores
+        public static DataTable Cargar_Estado()
         {
-            return ModeloProveedores.CargarProveedores();
+            return ModeloProveedores.CargarEstado();
         }
         public static DataTable Cargar_Proveedor()
         {
