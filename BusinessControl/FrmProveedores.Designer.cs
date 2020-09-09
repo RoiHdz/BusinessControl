@@ -35,20 +35,20 @@
             this.txtPrimerNombre = new System.Windows.Forms.TextBox();
             this.lblNIF = new System.Windows.Forms.Label();
             this.lblCorreo = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCorreoProveedor = new System.Windows.Forms.TextBox();
             this.lblDireccion = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.lblEstado = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtDui = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.txtTelefono1 = new System.Windows.Forms.MaskedTextBox();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.Panel_NumTelefono_SubMenu = new System.Windows.Forms.Panel();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.txtTelefono2 = new System.Windows.Forms.MaskedTextBox();
             this.BtnMostrarMas = new System.Windows.Forms.PictureBox();
             this.MenuSuperior.SuspendLayout();
             this.Panel_NumTelefono_SubMenu.SuspendLayout();
@@ -129,13 +129,13 @@
             this.lblCorreo.TabIndex = 9;
             this.lblCorreo.Text = "Correo:";
             // 
-            // textBox1
+            // txtCorreoProveedor
             // 
-            this.textBox1.Location = new System.Drawing.Point(246, 129);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 21);
-            this.textBox1.TabIndex = 10;
+            this.txtCorreoProveedor.Location = new System.Drawing.Point(246, 129);
+            this.txtCorreoProveedor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCorreoProveedor.Name = "txtCorreoProveedor";
+            this.txtCorreoProveedor.Size = new System.Drawing.Size(208, 21);
+            this.txtCorreoProveedor.TabIndex = 10;
             // 
             // lblDireccion
             // 
@@ -148,13 +148,13 @@
             this.lblDireccion.TabIndex = 11;
             this.lblDireccion.Text = "Direccion:";
             // 
-            // textBox2
+            // txtDireccion
             // 
-            this.textBox2.Location = new System.Drawing.Point(471, 67);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(269, 21);
-            this.textBox2.TabIndex = 12;
+            this.txtDireccion.Location = new System.Drawing.Point(471, 67);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(269, 21);
+            this.txtDireccion.TabIndex = 12;
             // 
             // lblEstado
             // 
@@ -187,13 +187,13 @@
             this.txtDui.Size = new System.Drawing.Size(201, 21);
             this.txtDui.TabIndex = 17;
             // 
-            // maskedTextBox1
+            // txtTelefono1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(35, 187);
-            this.maskedTextBox1.Mask = "0000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(201, 21);
-            this.maskedTextBox1.TabIndex = 19;
+            this.txtTelefono1.Location = new System.Drawing.Point(35, 187);
+            this.txtTelefono1.Mask = "0000-0000";
+            this.txtTelefono1.Name = "txtTelefono1";
+            this.txtTelefono1.Size = new System.Drawing.Size(201, 21);
+            this.txtTelefono1.TabIndex = 19;
             // 
             // lblDescripcion
             // 
@@ -224,14 +224,14 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // button2
+            // btnActualizar
             // 
-            this.button2.Location = new System.Drawing.Point(641, 244);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 41);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "Actualizar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnActualizar.Location = new System.Drawing.Point(641, 244);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(99, 41);
+            this.btnActualizar.TabIndex = 33;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
             // 
             // comboBox3
             // 
@@ -243,19 +243,19 @@
             // 
             // Panel_NumTelefono_SubMenu
             // 
-            this.Panel_NumTelefono_SubMenu.Controls.Add(this.maskedTextBox2);
+            this.Panel_NumTelefono_SubMenu.Controls.Add(this.txtTelefono2);
             this.Panel_NumTelefono_SubMenu.Location = new System.Drawing.Point(35, 209);
             this.Panel_NumTelefono_SubMenu.Name = "Panel_NumTelefono_SubMenu";
             this.Panel_NumTelefono_SubMenu.Size = new System.Drawing.Size(205, 36);
             this.Panel_NumTelefono_SubMenu.TabIndex = 37;
             // 
-            // maskedTextBox2
+            // txtTelefono2
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(0, 5);
-            this.maskedTextBox2.Mask = "0000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(201, 21);
-            this.maskedTextBox2.TabIndex = 20;
+            this.txtTelefono2.Location = new System.Drawing.Point(0, 5);
+            this.txtTelefono2.Mask = "0000-0000";
+            this.txtTelefono2.Name = "txtTelefono2";
+            this.txtTelefono2.Size = new System.Drawing.Size(201, 21);
+            this.txtTelefono2.TabIndex = 20;
             // 
             // BtnMostrarMas
             // 
@@ -277,17 +277,17 @@
             this.Controls.Add(this.BtnMostrarMas);
             this.Controls.Add(this.Panel_NumTelefono_SubMenu);
             this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.lblDescripcion);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.txtTelefono1);
             this.Controls.Add(this.txtDui);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblEstado);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.lblDireccion);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCorreoProveedor);
             this.Controls.Add(this.lblCorreo);
             this.Controls.Add(this.lblNIF);
             this.Controls.Add(this.txtPrimerNombre);
@@ -318,20 +318,20 @@
         public System.Windows.Forms.TextBox txtPrimerNombre;
         private System.Windows.Forms.Label lblNIF;
         private System.Windows.Forms.Label lblCorreo;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox txtCorreoProveedor;
         private System.Windows.Forms.Label lblDireccion;
-        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.MaskedTextBox txtDui;
-        public System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        public System.Windows.Forms.MaskedTextBox txtTelefono1;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Panel Panel_NumTelefono_SubMenu;
-        public System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        public System.Windows.Forms.MaskedTextBox txtTelefono2;
         private System.Windows.Forms.PictureBox BtnMostrarMas;
     }
 }

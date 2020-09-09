@@ -113,8 +113,8 @@ namespace BusinessControl
             ProveedoresController agregar = new ProveedoresController();
             agregar.DUI = txtDui.Text;
             agregar.NombreProveedor = txtPrimerNombre.Text;
-            agregar.Direccion = textBox2.Text;
-            agregar.CorreoProveedor = textBox1.Text;
+            agregar.Direccion = txtDireccion.Text;
+            agregar.CorreoProveedor = txtCorreoProveedor.Text;
             agregar.Descripcion = txtDescripcion.Text;
             agregar.EstadoProveedor = Convert.ToInt16(comboBox3.SelectedValue);
             if (agregar.EnviarDatos_Controller() == false)
@@ -131,11 +131,11 @@ namespace BusinessControl
         {
             txtDui.Clear();
             txtPrimerNombre.Clear();
-            textBox2.Clear();
-            textBox1.Clear();
+            txtDireccion.Clear();
+            txtCorreoProveedor.Clear();
             txtDescripcion.Clear();
-            maskedTextBox1.Clear();
-            maskedTextBox2.Clear();
+            txtTelefono1.Clear();
+            txtTelefono2.Clear();
 
         }
     }
