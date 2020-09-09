@@ -89,10 +89,7 @@ namespace BusinessControl
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-            EnvioDatos();
-        }
+       
         void EnvioDatos()
         {
             ProveedoresController agregar = new ProveedoresController();
@@ -111,7 +108,12 @@ namespace BusinessControl
                 LimpiarCampos();
             }
         }
-       
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            EnvioDatos();
+        }
+
         void LimpiarCampos()
         {
             txtDui.Clear();
