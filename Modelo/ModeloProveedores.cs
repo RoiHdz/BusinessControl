@@ -53,17 +53,12 @@ namespace Modelo
             }
         }
 
-        public bool registrarProveedor(string dUI, string nombreProveedor, string direccion, string correoProveedor, string descripcion, int estadoProveedor)
-        {
-            throw new NotImplementedException();
-        }
-
-        public static bool RegistrarProveedor(string NIF, string PrimerNombre, string Direccion, string Correo, string Descripcion, int Estado)
+        public static bool RegistrarProveedor(string dUI, string nombreProveedor, string direccion, string correoProveedor, string descripcion, int estadoProveedor)
         {
             bool retorno;
             try
             {
-                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbProveedor (NIF, PrimerNombre,  Direccion, Correo,Descripcion, idEstado_Proveedor) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')", NIF, PrimerNombre, Direccion, Correo, Descripcion, Estado), Conexion.getConnect());
+                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbProveedor (NIF, Nombre,  Direccion, Correo,Descripcion, idEstado_Proveedor) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')", dUI, nombreProveedor, direccion, correoProveedor, descripcion, estadoProveedor), Conexion.getConnect());
                 retorno = Convert.ToBoolean(cmdinsert.ExecuteNonQuery());
                 return retorno;
             }
@@ -72,6 +67,8 @@ namespace Modelo
                 return retorno = false;
             }
         }
+
+       
 
     }
 }

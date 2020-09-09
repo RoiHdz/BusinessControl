@@ -100,7 +100,7 @@ namespace BusinessControl
             {
                 comboBox3.DataSource = ProveedoresController.Cargar_Proveedores();
                 comboBox3.DisplayMember = "Estado";
-                comboBox3.ValueMember = "idEstado_ClienteP";
+                comboBox3.ValueMember = "idEstado_Proveedor";
             }
             catch (Exception)
             {
@@ -134,6 +134,8 @@ namespace BusinessControl
             textBox2.Clear();
             textBox1.Clear();
             txtDescripcion.Clear();
+            maskedTextBox1.Clear();
+            maskedTextBox2.Clear();
 
         }
     }
