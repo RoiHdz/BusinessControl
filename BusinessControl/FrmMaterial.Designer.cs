@@ -42,13 +42,15 @@
             this.lblMarcaMaterial = new System.Windows.Forms.Label();
             this.lblidProveedor = new System.Windows.Forms.Label();
             this.txtMarcaMaterial = new System.Windows.Forms.TextBox();
-            this.txtProveedor = new System.Windows.Forms.TextBox();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblEstado = new System.Windows.Forms.Label();
-            this.txtCategoria = new System.Windows.Forms.TextBox();
-            this.txtEstado = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.MenuSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,7 +88,7 @@
             this.lblNombreMaterial.AutoSize = true;
             this.lblNombreMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreMaterial.ForeColor = System.Drawing.Color.White;
-            this.lblNombreMaterial.Location = new System.Drawing.Point(57, 44);
+            this.lblNombreMaterial.Location = new System.Drawing.Point(9, 44);
             this.lblNombreMaterial.Name = "lblNombreMaterial";
             this.lblNombreMaterial.Size = new System.Drawing.Size(133, 16);
             this.lblNombreMaterial.TabIndex = 6;
@@ -94,10 +96,10 @@
             // 
             // txtNombreMaterial
             // 
-            this.txtNombreMaterial.Location = new System.Drawing.Point(39, 64);
+            this.txtNombreMaterial.Location = new System.Drawing.Point(12, 64);
             this.txtNombreMaterial.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombreMaterial.Name = "txtNombreMaterial";
-            this.txtNombreMaterial.Size = new System.Drawing.Size(169, 21);
+            this.txtNombreMaterial.Size = new System.Drawing.Size(229, 21);
             this.txtNombreMaterial.TabIndex = 7;
             // 
             // lblCodigoMaterial
@@ -105,7 +107,7 @@
             this.lblCodigoMaterial.AutoSize = true;
             this.lblCodigoMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigoMaterial.ForeColor = System.Drawing.Color.White;
-            this.lblCodigoMaterial.Location = new System.Drawing.Point(311, 44);
+            this.lblCodigoMaterial.Location = new System.Drawing.Point(253, 44);
             this.lblCodigoMaterial.Name = "lblCodigoMaterial";
             this.lblCodigoMaterial.Size = new System.Drawing.Size(128, 16);
             this.lblCodigoMaterial.TabIndex = 8;
@@ -116,7 +118,7 @@
             this.lblPrecioUnitario.AutoSize = true;
             this.lblPrecioUnitario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecioUnitario.ForeColor = System.Drawing.Color.White;
-            this.lblPrecioUnitario.Location = new System.Drawing.Point(571, 44);
+            this.lblPrecioUnitario.Location = new System.Drawing.Point(508, 44);
             this.lblPrecioUnitario.Name = "lblPrecioUnitario";
             this.lblPrecioUnitario.Size = new System.Drawing.Size(96, 16);
             this.lblPrecioUnitario.TabIndex = 9;
@@ -124,18 +126,18 @@
             // 
             // txtCodigoMaterial
             // 
-            this.txtCodigoMaterial.Location = new System.Drawing.Point(291, 64);
+            this.txtCodigoMaterial.Location = new System.Drawing.Point(256, 64);
             this.txtCodigoMaterial.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCodigoMaterial.Name = "txtCodigoMaterial";
-            this.txtCodigoMaterial.Size = new System.Drawing.Size(169, 21);
+            this.txtCodigoMaterial.Size = new System.Drawing.Size(229, 21);
             this.txtCodigoMaterial.TabIndex = 10;
             // 
             // txtPrecioUnitario
             // 
-            this.txtPrecioUnitario.Location = new System.Drawing.Point(535, 64);
+            this.txtPrecioUnitario.Location = new System.Drawing.Point(511, 64);
             this.txtPrecioUnitario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPrecioUnitario.Name = "txtPrecioUnitario";
-            this.txtPrecioUnitario.Size = new System.Drawing.Size(169, 21);
+            this.txtPrecioUnitario.Size = new System.Drawing.Size(229, 21);
             this.txtPrecioUnitario.TabIndex = 11;
             // 
             // lblDescripcionMaterial
@@ -143,7 +145,7 @@
             this.lblDescripcionMaterial.AutoSize = true;
             this.lblDescripcionMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescripcionMaterial.ForeColor = System.Drawing.Color.White;
-            this.lblDescripcionMaterial.Location = new System.Drawing.Point(82, 111);
+            this.lblDescripcionMaterial.Location = new System.Drawing.Point(508, 162);
             this.lblDescripcionMaterial.Name = "lblDescripcionMaterial";
             this.lblDescripcionMaterial.Size = new System.Drawing.Size(83, 16);
             this.lblDescripcionMaterial.TabIndex = 12;
@@ -152,11 +154,11 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(39, 131);
+            this.txtDescripcion.Location = new System.Drawing.Point(511, 182);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(169, 125);
+            this.txtDescripcion.Size = new System.Drawing.Size(229, 55);
             this.txtDescripcion.TabIndex = 13;
             // 
             // lblMarcaMaterial
@@ -164,7 +166,7 @@
             this.lblMarcaMaterial.AutoSize = true;
             this.lblMarcaMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarcaMaterial.ForeColor = System.Drawing.Color.White;
-            this.lblMarcaMaterial.Location = new System.Drawing.Point(347, 111);
+            this.lblMarcaMaterial.Location = new System.Drawing.Point(12, 100);
             this.lblMarcaMaterial.Name = "lblMarcaMaterial";
             this.lblMarcaMaterial.Size = new System.Drawing.Size(49, 16);
             this.lblMarcaMaterial.TabIndex = 14;
@@ -175,7 +177,7 @@
             this.lblidProveedor.AutoSize = true;
             this.lblidProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblidProveedor.ForeColor = System.Drawing.Color.White;
-            this.lblidProveedor.Location = new System.Drawing.Point(581, 111);
+            this.lblidProveedor.Location = new System.Drawing.Point(253, 100);
             this.lblidProveedor.Name = "lblidProveedor";
             this.lblidProveedor.Size = new System.Drawing.Size(75, 16);
             this.lblidProveedor.TabIndex = 15;
@@ -183,26 +185,18 @@
             // 
             // txtMarcaMaterial
             // 
-            this.txtMarcaMaterial.Location = new System.Drawing.Point(291, 131);
+            this.txtMarcaMaterial.Location = new System.Drawing.Point(12, 120);
             this.txtMarcaMaterial.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMarcaMaterial.Name = "txtMarcaMaterial";
-            this.txtMarcaMaterial.Size = new System.Drawing.Size(169, 21);
+            this.txtMarcaMaterial.Size = new System.Drawing.Size(229, 21);
             this.txtMarcaMaterial.TabIndex = 16;
-            // 
-            // txtProveedor
-            // 
-            this.txtProveedor.Location = new System.Drawing.Point(535, 131);
-            this.txtProveedor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtProveedor.Name = "txtProveedor";
-            this.txtProveedor.Size = new System.Drawing.Size(169, 21);
-            this.txtProveedor.TabIndex = 17;
             // 
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.ForeColor = System.Drawing.Color.White;
-            this.lblCategoria.Location = new System.Drawing.Point(347, 174);
+            this.lblCategoria.Location = new System.Drawing.Point(508, 100);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(70, 16);
             this.lblCategoria.TabIndex = 18;
@@ -213,31 +207,15 @@
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstado.ForeColor = System.Drawing.Color.White;
-            this.lblEstado.Location = new System.Drawing.Point(592, 174);
+            this.lblEstado.Location = new System.Drawing.Point(12, 162);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(54, 16);
             this.lblEstado.TabIndex = 19;
             this.lblEstado.Text = "Estado:";
             // 
-            // txtCategoria
-            // 
-            this.txtCategoria.Location = new System.Drawing.Point(291, 194);
-            this.txtCategoria.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(169, 21);
-            this.txtCategoria.TabIndex = 20;
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(535, 194);
-            this.txtEstado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(169, 21);
-            this.txtEstado.TabIndex = 21;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(488, 244);
+            this.button1.Location = new System.Drawing.Point(511, 244);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 41);
             this.button1.TabIndex = 34;
@@ -246,12 +224,54 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(623, 244);
+            this.button2.Location = new System.Drawing.Point(641, 244);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 41);
             this.button2.TabIndex = 35;
             this.button2.Text = "Actualizar";
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(511, 119);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(229, 24);
+            this.comboBox1.TabIndex = 36;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(12, 181);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(229, 24);
+            this.comboBox2.TabIndex = 37;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(256, 120);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(229, 24);
+            this.comboBox3.TabIndex = 38;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(253, 162);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 16);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Estado:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(256, 181);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(229, 21);
+            this.dateTimePicker1.TabIndex = 40;
             // 
             // FrmMaterial
             // 
@@ -259,13 +279,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(752, 297);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtEstado);
-            this.Controls.Add(this.txtCategoria);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.lblCategoria);
-            this.Controls.Add(this.txtProveedor);
             this.Controls.Add(this.txtMarcaMaterial);
             this.Controls.Add(this.lblidProveedor);
             this.Controls.Add(this.lblMarcaMaterial);
@@ -306,12 +328,14 @@
         private System.Windows.Forms.Label lblMarcaMaterial;
         private System.Windows.Forms.Label lblidProveedor;
         public System.Windows.Forms.TextBox txtMarcaMaterial;
-        public System.Windows.Forms.TextBox txtProveedor;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label lblEstado;
-        public System.Windows.Forms.TextBox txtCategoria;
-        public System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
