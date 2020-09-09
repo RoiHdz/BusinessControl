@@ -31,7 +31,7 @@ namespace Controlador
         public string Descripcion { get; set; }
         public int EstadoProveedor { get; set; }
 
-        public ProveedoresController() { }
+        
         public bool EnviarDatos_Controller()
         {
             return ModeloProveedores.RegistrarProveedor (DUI, NombreProveedor, Direccion, CorreoProveedor, Descripcion, EstadoProveedor);

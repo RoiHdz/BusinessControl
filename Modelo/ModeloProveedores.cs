@@ -55,12 +55,12 @@ namespace Modelo
             }
         }
 
-        public static bool RegistrarProveedor(string dUI, string nombreProveedor, string direccion, string correoProveedor, string descripcion, int estadoProveedor)
+        public static bool RegistrarProveedor(string DUI, string nombreProveedor, string direccion, string correoProveedor, string descripcion, int estadoProveedor)
         {
             bool retorno;
             try
             {
-                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbproveedor (NIF, Nombre,  Direccion, Correo,Descripcion, idEstado_Proveedor) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')", dUI, nombreProveedor, direccion, correoProveedor, descripcion, estadoProveedor), Conexion.getConnect());
+                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbproveedor (NIF, Nombre,  Direccion, Correo,Descripcion, idEstado_Proveedor) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')", DUI, nombreProveedor, direccion, correoProveedor, descripcion, estadoProveedor), Conexion.getConnect());
                 retorno = Convert.ToBoolean(cmdinsert.ExecuteNonQuery());
                 return retorno;
             }
