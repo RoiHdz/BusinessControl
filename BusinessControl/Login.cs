@@ -78,5 +78,14 @@ namespace BusinessControl
             this.Show();
             txtUsuario.Focus();
         }
+
+        void VerficarPrimerUso()
+        {
+
+        }
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

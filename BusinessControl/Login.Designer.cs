@@ -41,6 +41,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnPrimerUso = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -192,12 +193,24 @@
             this.panel5.Size = new System.Drawing.Size(468, 10);
             this.panel5.TabIndex = 10;
             // 
+            // btnPrimerUso
+            // 
+            this.btnPrimerUso.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnPrimerUso.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrimerUso.Location = new System.Drawing.Point(263, 93);
+            this.btnPrimerUso.Name = "btnPrimerUso";
+            this.btnPrimerUso.Size = new System.Drawing.Size(505, 210);
+            this.btnPrimerUso.TabIndex = 12;
+            this.btnPrimerUso.Text = "Primer uso";
+            this.btnPrimerUso.UseVisualStyleBackColor = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(780, 330);
+            this.Controls.Add(this.btnPrimerUso);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
@@ -215,6 +228,7 @@
             this.Opacity = 0.97D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -239,5 +253,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btnPrimerUso;
     }
 }
