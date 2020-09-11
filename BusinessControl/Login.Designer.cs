@@ -195,8 +195,8 @@
             // 
             // btnPrimerUso
             // 
-            this.btnPrimerUso.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnPrimerUso.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrimerUso.BackColor = System.Drawing.SystemColors.GrayText;
+            this.btnPrimerUso.Font = new System.Drawing.Font("BodoniXT", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrimerUso.Location = new System.Drawing.Point(263, 93);
             this.btnPrimerUso.Name = "btnPrimerUso";
             this.btnPrimerUso.Size = new System.Drawing.Size(505, 210);

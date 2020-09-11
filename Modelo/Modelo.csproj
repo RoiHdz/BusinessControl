@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="ModelLogin.cs" />
     <Compile Include="ModeloClienteP.cs" />
     <Compile Include="ModeloProveedores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
