@@ -8,12 +8,17 @@ using Modelo;
 
 namespace Controlador
 {
-    public class LoginController
+    public class LoginController 
     {
         public static MySqlConnection Conectar()
         {
             return Conexion.getConnect();
         }
 
+        public static int VerificarPrimerUso_Controller()
+        {
+            return ModelLogin.ObtenerEmpresas();
+        }
+        
     }
 }

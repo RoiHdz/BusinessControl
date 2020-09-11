@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using Controlador;
 
 namespace BusinessControl
 {
@@ -81,11 +82,32 @@ namespace BusinessControl
 
         void VerficarPrimerUso()
         {
-
+            int valor = LoginController.VerificarPrimerUso_Controller();
+            if (valor == 1)
+            {
+                btnPrimerUso.Visible = false;
+            }
+            else if (valor == 0)
+            {
+                btnPrimerUso.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("Error de verificacion inicial", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
         private void Login_Load(object sender, EventArgs e)
         {
+            VerficarPrimerUso();
+        }
 
+        private void btnPrimerUso_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmPrimerUso mainMenu = new FrmPrimerUso();
+            mainMenu.Show();
+            mainMenu.FormClosed += CerrarSesion;
+            Hide();
         }
     }
 }
