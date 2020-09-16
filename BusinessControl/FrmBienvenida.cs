@@ -12,15 +12,18 @@ namespace BusinessControl
 {
     public partial class FrmBienvenida : Form
     {
-        public FrmBienvenida()
+        public static string usuario { get; set; }
+        public FrmBienvenida( string user)
         {
             InitializeComponent();
+            usuario = user;
         }
 
         private void FrmBienvenida_Load(object sender, EventArgs e)
         {
             this.Opacity = 0.0;
             tmrFadeIn.Start();
+            lblUsername.Text = usuario;
         }
         private void tmrFadeIn_Tick(object sender, EventArgs e)
         {

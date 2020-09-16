@@ -64,7 +64,7 @@ namespace BusinessControl
         private void btnAcceder_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmBienvenida Bienvenida = new FrmBienvenida();
+            FrmBienvenida Bienvenida = new FrmBienvenida(txtUsuario.Text);
             Bienvenida.ShowDialog();
             FrmInicio mainMenu = new FrmInicio(txtUsuario.Text);
             mainMenu.Show();

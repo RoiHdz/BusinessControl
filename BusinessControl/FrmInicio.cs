@@ -15,7 +15,7 @@ namespace BusinessControl
 {
     public partial class FrmInicio : Form
     {
-        public string usuario { get; set; }
+        public static string usuario { get; set; }
         public FrmInicio(string user)
         {
             InitializeComponent();
@@ -26,10 +26,7 @@ namespace BusinessControl
         private extern static void ReleaseCapture();
         [DllImport("User32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
-        public FrmInicio(/*string text*/)
-        {
-            //Text = text;
-        }
+        
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
         }
@@ -141,7 +138,7 @@ namespace BusinessControl
         {
             try
             {
-                //lblUsuario = usuario;
+                lblUsuaio.Text = usuario;
             }
             catch (Exception)
             {
