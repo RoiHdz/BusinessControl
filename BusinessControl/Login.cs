@@ -63,13 +63,14 @@ namespace BusinessControl
         }
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmBienvenida Bienvenida = new FrmBienvenida(txtUsuario.Text);
-            Bienvenida.ShowDialog();
-            FrmInicio mainMenu = new FrmInicio(txtUsuario.Text);
-            mainMenu.Show();
-            mainMenu.FormClosed += CerrarSesion;
-            Hide();
+            if (txtUsuario.Text == "USUARIO" || txtPassword.Text == "CONTRASENA")
+            {
+                MessageBox.Show("Los campos no pueden ir vacios", "Campos Vacios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                EnviarDatosLog();
+            }
         }
         private void CerrarSesion(object sender, FormClosedEventArgs e)
         {
@@ -78,6 +79,27 @@ namespace BusinessControl
             txtUsuario.Text = "USUARIO";
             this.Show();
             txtUsuario.Focus();
+        }
+        void EnviarDatosLog()
+        {
+            AtributosLogin.usuario = txtUsuario.Text;
+            AtributosLogin.clave = txtPassword.Text;
+            bool acceso = LoginController.Acceso_Controller();
+            if (acceso == true)
+            {
+                this.Hide();
+                FrmBienvenida Bienvenida = new FrmBienvenida(txtUsuario.Text);
+                Bienvenida.ShowDialog();
+                FrmInicio mainMenu = new FrmInicio(txtUsuario.Text);
+                mainMenu.Show();
+                mainMenu.FormClosed += CerrarSesion;
+                Hide();
+            }
+            else
+            {
+                MessageBox.Show("El usuario o la contrasena que ingresaste no coinciden con ninguna cuenta.",
+                    "Error al iniciaer sensiom", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         void VerficarPrimerUso()

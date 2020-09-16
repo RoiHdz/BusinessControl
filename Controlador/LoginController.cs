@@ -8,8 +8,12 @@ using Modelo;
 
 namespace Controlador
 {
-    public class LoginController 
+    public class LoginController : AtributosLogin
     {
+        public static bool Acceso_Controller()
+        {
+            return ModelLogin.Acceso(usuario, clave);
+        }
         public static MySqlConnection Conectar()
         {
             return Conexion.getConnect();
@@ -20,5 +24,11 @@ namespace Controlador
             return ModelLogin.ObtenerEmpresas();
         }
         
+    }
+    public class AtributosLogin
+    {
+        public static string usuario { get; set; }
+        public static string clave { get; set; }
+        public AtributosLogin() {}
     }
 }
