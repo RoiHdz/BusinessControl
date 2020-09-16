@@ -42,7 +42,6 @@
             this.BtnCliente = new System.Windows.Forms.Button();
             this.pnlDatos = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.lblUsuaio = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.horafecha = new System.Windows.Forms.Timer(this.components);
@@ -58,6 +57,7 @@
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.PanelContenedor = new System.Windows.Forms.Panel();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.PanelMenu.SuspendLayout();
             this.PanelClientes_SubMenu.SuspendLayout();
             this.pnlDatos.SuspendLayout();
@@ -248,8 +248,8 @@
             // 
             // pnlDatos
             // 
+            this.pnlDatos.Controls.Add(this.lblEmail);
             this.pnlDatos.Controls.Add(this.label4);
-            this.pnlDatos.Controls.Add(this.label3);
             this.pnlDatos.Controls.Add(this.lblUsuaio);
             this.pnlDatos.Controls.Add(this.pictureBox4);
             this.pnlDatos.Dock = System.Windows.Forms.DockStyle.Top;
@@ -261,20 +261,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(89, 64);
+            this.label4.Location = new System.Drawing.Point(89, 73);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 16);
             this.label4.TabIndex = 16;
             this.label4.Text = "label4";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(89, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 16);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "label3";
             // 
             // lblUsuaio
             // 
@@ -318,7 +309,7 @@
             this.lblHora.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblHora.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblHora.Location = new System.Drawing.Point(306, 648);
+            this.lblHora.Location = new System.Drawing.Point(356, 648);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(65, 22);
             this.lblHora.TabIndex = 7;
@@ -435,6 +426,15 @@
             this.PanelContenedor.Size = new System.Drawing.Size(1057, 616);
             this.PanelContenedor.TabIndex = 8;
             // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(89, 44);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(41, 16);
+            this.lblEmail.TabIndex = 17;
+            this.lblEmail.Text = "label2";
+            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -498,10 +498,10 @@
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblUsuaio;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel PanelContenedor;
+        private System.Windows.Forms.Label lblEmail;
     }
 }
 

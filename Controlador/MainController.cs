@@ -9,7 +9,7 @@ using Modelo;
 
 namespace Controlador
 {
-    public class MainController
+    public class MainController : AtributosMain
     {
         public static MySqlConnection ConnectController()
         {
@@ -37,9 +37,20 @@ namespace Controlador
         public string Correo { get; set; }
         public int Estado { get; set; }
         //Constructor
-        public MainController() {}
+        public MainController() { }
         public bool EnviarDatos_Controlle() {
-            return ModeloClienteP.registrarCliente(PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido, FechaNacimiento,dui, Correo, direccion, Estado);
+            return ModeloClienteP.registrarCliente(PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido, FechaNacimiento, dui, Correo, direccion, Estado);
         }
+
+        //Form Main
+
+        public static bool infoMail_Controller()
+        {
+            return ModelMain.InfoMail(idUsuario);
+        }
+    }
+    public class AtributosMain{
+        public static string idUsuario { get; set; }
+        public AtributosMain() { }
     }
 }

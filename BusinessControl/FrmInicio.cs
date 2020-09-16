@@ -139,12 +139,18 @@ namespace BusinessControl
             try
             {
                 lblUsuaio.Text = usuario;
+                VerificarDatos();
             }
             catch (Exception)
             {
 
                 throw;
             }
+        }
+        void VerificarDatos()
+        {
+            AtributosMain.idUsuario = lblEmail.Text;
+            bool info = MainController.infoMail_Controller();
         }
 
         private void BtnMinimizar_Click(object sender, EventArgs e)
