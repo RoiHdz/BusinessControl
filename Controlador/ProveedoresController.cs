@@ -9,7 +9,7 @@ using Modelo;
 
 namespace Controlador
 {
-    public class ProveedoresController
+    public class ProveedoresController 
     {
         public static MySqlConnection ConnectController()
         {
