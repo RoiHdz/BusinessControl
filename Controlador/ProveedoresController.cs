@@ -15,7 +15,7 @@ namespace Controlador
         {
             return Conexion.getConnect();
         }
-        //Metodo para mostrar los estados en el fromulario FrmProveedores
+        //Metodo para mostrar los estados en el formulario FrmProveedores
         public static DataTable Cargar_Estado()
         {
             return ModeloProveedores.CargarEstado();

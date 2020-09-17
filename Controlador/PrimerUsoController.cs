@@ -11,5 +11,9 @@ namespace Controlador
 {
     public class PrimerUsoController
     {
+        public static MySqlConnection ConnectController()
+        {
+            return Conexion.getConnect();
+        }
     }
 }
