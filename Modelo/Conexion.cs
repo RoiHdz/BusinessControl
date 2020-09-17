@@ -15,7 +15,7 @@ namespace Modelo
             //Variables que serviran de retorno
             MySqlConnection connect;
 
-            //Variables de conexion
+            //Variables de conexion 
             string server = "127.0.0.1";
             string database = "dbBusinessControl";
             string user = "root";

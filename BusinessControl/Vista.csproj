@@ -53,6 +53,12 @@
     <Compile Include="FrmBienvenida.Designer.cs">
       <DependentUpon>FrmBienvenida.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmClienteEmpresa_hijo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClienteEmpresa_hijo.Designer.cs">
+      <DependentUpon>FrmClienteEmpresa_hijo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmClientePE_hijo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,7 @@
     <Compile Include="FrmProveedores.Designer.cs">
       <DependentUpon>FrmProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface1.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +124,9 @@
     </Compile>
     <EmbeddedResource Include="FrmBienvenida.resx">
       <DependentUpon>FrmBienvenida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClienteEmpresa_hijo.resx">
+      <DependentUpon>FrmClienteEmpresa_hijo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClientePE_hijo.resx">
       <DependentUpon>FrmClientePE_hijo.cs</DependentUpon>

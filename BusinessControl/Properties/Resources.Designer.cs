@@ -133,6 +133,16 @@ namespace BusinessControl.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_button1 {
+            get {
+                object obj = ResourceManager.GetObject("close-button1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap empresario {
             get {
                 object obj = ResourceManager.GetObject("empresario", resourceCulture);
