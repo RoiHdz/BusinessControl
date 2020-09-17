@@ -60,7 +60,7 @@ namespace Modelo
             bool retorno;
             try
             {
-                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbproveedor (NIF, Nombre,  Direccion, Correo,Descripcion, idEstado_Proveedor) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')", DUI, nombreProveedor, direccion, correoProveedor, descripcion, estadoProveedor), Conexion.getConnect());
+                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbproveedor (NIF, Nombre,  Direccion, Correo,Descripcion, idEstado_Proveedor) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')", DUI, nombreProveedor, direccion, correoProveedor, descripcion, estadoProveedor), Conexion.getConnect());
                 retorno = Convert.ToBoolean(cmdinsert.ExecuteNonQuery());
                 return retorno;
             }

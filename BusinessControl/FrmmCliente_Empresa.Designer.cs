@@ -28,87 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnagregar = new System.Windows.Forms.Button();
             this.DgvClientes_Empresa = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.DgvClientes_Empresa)).BeginInit();
             this.SuspendLayout();
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(955, 192);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Location = new System.Drawing.Point(716, 156);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(239, 46);
+            this.button4.Size = new System.Drawing.Size(179, 37);
             this.button4.TabIndex = 14;
             this.button4.Text = "Buscar Cliente";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnEliminar
             // 
-            this.button3.Location = new System.Drawing.Point(955, 139);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(239, 46);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Eliminar Cliente";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEliminar.Location = new System.Drawing.Point(716, 113);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(179, 37);
+            this.btnEliminar.TabIndex = 13;
+            this.btnEliminar.Text = "Eliminar Cliente";
+            this.btnEliminar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnModificar
             // 
-            this.button2.Location = new System.Drawing.Point(955, 86);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(239, 46);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Modificar Cliente";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnModificar.Location = new System.Drawing.Point(716, 70);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(179, 37);
+            this.btnModificar.TabIndex = 12;
+            this.btnModificar.Text = "Modificar Cliente";
+            this.btnModificar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnagregar
             // 
-            this.button1.Location = new System.Drawing.Point(955, 33);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(239, 46);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Agregar Cliente";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnagregar.Location = new System.Drawing.Point(716, 27);
+            this.btnagregar.Name = "btnagregar";
+            this.btnagregar.Size = new System.Drawing.Size(179, 37);
+            this.btnagregar.TabIndex = 11;
+            this.btnagregar.Text = "Agregar Cliente";
+            this.btnagregar.UseVisualStyleBackColor = true;
             // 
             // DgvClientes_Empresa
             // 
             this.DgvClientes_Empresa.BackgroundColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LimeGreen;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvClientes_Empresa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LimeGreen;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvClientes_Empresa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DgvClientes_Empresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvClientes_Empresa.Location = new System.Drawing.Point(41, 13);
-            this.DgvClientes_Empresa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DgvClientes_Empresa.Location = new System.Drawing.Point(31, 11);
             this.DgvClientes_Empresa.Name = "DgvClientes_Empresa";
-            this.DgvClientes_Empresa.Size = new System.Drawing.Size(906, 560);
+            this.DgvClientes_Empresa.Size = new System.Drawing.Size(680, 455);
             this.DgvClientes_Empresa.TabIndex = 10;
-            this.DgvClientes_Empresa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvClientes_Empresa_CellContentClick);
             // 
             // FrmmCliente_Empresa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.ClientSize = new System.Drawing.Size(1249, 676);
+            this.ClientSize = new System.Drawing.Size(937, 549);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnagregar);
             this.Controls.Add(this.DgvClientes_Empresa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmmCliente_Empresa";
             this.Text = "FrmmClientes";
             ((System.ComponentModel.ISupportInitialize)(this.DgvClientes_Empresa)).EndInit();
@@ -119,9 +112,9 @@
         #endregion
 
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnagregar;
         private System.Windows.Forms.DataGridView DgvClientes_Empresa;
     }
 }

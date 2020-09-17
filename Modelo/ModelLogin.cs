@@ -26,20 +26,20 @@ namespace Modelo
                 return retorno = false;
             }
         }
-        public static int ObtenerEmpresas()
+        public static bool ObtenerEmpresas()
         {
-            int retorno;
+            bool retorno;
             string query = "SELECT * FROM tbempresa";
             try
             {
                 MySqlCommand cmdselect = new MySqlCommand(string.Format(query), Conexion.getConnect());
-                retorno = Convert.ToInt16(cmdselect.ExecuteScalar());
+                retorno = Convert.ToBoolean(cmdselect.ExecuteScalar());
                 return retorno;
             }
             catch (Exception)
             {
 
-                return retorno = -1;
+                return retorno = false;
             }
         }
     }

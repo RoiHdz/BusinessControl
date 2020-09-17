@@ -9,13 +9,13 @@ using Modelo;
 
 namespace Controlador
 {
-    public class ProveedoresController
+    public class ProveedoresController 
     {
         public static MySqlConnection ConnectController()
         {
             return Conexion.getConnect();
         }
-        //Metodo para mostrar los estados en el fromulario FrmProveedores
+        //Metodo para mostrar los estados en el formulario FrmProveedores
         public static DataTable Cargar_Estado()
         {
             return ModeloProveedores.CargarEstado();
