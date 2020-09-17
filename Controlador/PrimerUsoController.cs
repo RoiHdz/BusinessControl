@@ -19,10 +19,7 @@ namespace Controlador
         {
             return ModeloPrimerUso.CargarTipoEmpresa();
         }
-        public static DataTable Cargar_Empresas()
-        {
-            return ModeloPrimerUso.ListaEmpresa();
-        }
+        
         public string NombreEmpresa { get; set; }
         public string Correo { get; set; }
         public string Direccion { get; set; }
@@ -30,9 +27,10 @@ namespace Controlador
         public string Representante { get; set; }
         public int TipoEmpresa { get; set; }
 
-        public bool EnviarDatos_Controller()
+        public PrimerUsoController() { }
+        public bool EnviarDatos_Controlleer()
         {
-            return ModeloPrimerUso.RegistrarEmpresa(NombreEmpresa, Correo, Direccion, NIT, Representante, TipoEmpresa);
+            return ModeloPrimerUso.registrarEmpresa(NombreEmpresa, Correo, NIT, Representante,Direccion, TipoEmpresa);
         }
     }
 }

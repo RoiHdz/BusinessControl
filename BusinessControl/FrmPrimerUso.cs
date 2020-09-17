@@ -39,14 +39,14 @@ namespace BusinessControl
         }
         void EnvioDatos()
         {
-            PrimerUsoController agregar = new PrimerUsoController ();
+            PrimerUsoController agregar = new PrimerUsoController();
             agregar.NombreEmpresa = txtNombreEmpresa.Text;
             agregar.Correo = txtCorreoEmpresa.Text;
             agregar.Direccion = txtDireccionEmpresa.Text;
             agregar.NIT = txtNitEmpresa.Text;
             agregar.Representante = txtRepresentante.Text;
             agregar.TipoEmpresa = Convert.ToInt16(cmbTipoEmpresa.SelectedValue);
-            if (agregar.EnviarDatos_Controller() == false)
+            if (agregar.EnviarDatos_Controlleer() == false)
             {
                 MessageBox.Show("El usuario no puedo ser ingresado", "Advertencia", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Warning);
             }

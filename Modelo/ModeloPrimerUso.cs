@@ -31,34 +31,14 @@ namespace Modelo
                 Conexion.getConnect().Close();
             }
         }
-        public static DataTable ListaEmpresa()
-        {
-            DataTable data;
-            try
-            {
-                string query = "SELECT * FROM tbempresa";
-                MySqlCommand cmdselect = new MySqlCommand(string.Format(query), Conexion.getConnect());
-                MySqlDataAdapter adp = new MySqlDataAdapter(cmdselect);
-                data = new DataTable();
-                adp.Fill(data);
-                return data;
-            }
-            catch (Exception)
-            {
-                return data = null;
-            }
-            finally
-            {
-                Conexion.getConnect().Close();
-            }
-        }
+       
 
-        public static bool RegistrarEmpresa(string NombreEmpresa, string Correo, string NIT, string Representante, string Direccion, int TipoEmpresa)
+        public static bool registrarEmpresa(string NombreEmpresa, string Correo, string NIT, string Representante, string Direccion, int TipoEmpresa)
         {
             bool retorno;
             try
             {
-                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbempresa (Empresa, Correo,  NIT, Representante legal, Direccion , idTipo_Empresa) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')", NombreEmpresa, Correo, NIT, Representante, Direccion, TipoEmpresa), Conexion.getConnect());
+                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbempresa (Empresa, Correo,  NIT, Representante legal, idTipo_Empresa, Direccion) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')", NombreEmpresa, Correo, NIT, Representante, TipoEmpresa , Direccion), Conexion.getConnect());
                 retorno = Convert.ToBoolean(cmdinsert.ExecuteNonQuery());
                 return retorno;
             }
