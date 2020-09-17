@@ -58,6 +58,10 @@ namespace BusinessControl
         private void btnAgregarEmpresa_Click(object sender, EventArgs e)
         {
             EnvioDatos();
+            this.Hide();
+            Login mainMenu = new Login();
+            mainMenu.Show();           
+            Hide();
         }
         void LimpiarCampos()
         {
