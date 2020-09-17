@@ -104,12 +104,12 @@ namespace BusinessControl
 
         void VerficarPrimerUso()
         {
-            int valor = LoginController.VerificarPrimerUso_Controller();
-            if (valor == 1)
+            bool valor = LoginController.VerificarPrimerUso_Controller();
+            if (valor == true)
             {
                 btnPrimerUso.Visible = false;
             }
-            else if (valor == 0)
+            else if (valor == false)
             {
                 btnPrimerUso.Visible = true;
             }

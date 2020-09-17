@@ -19,7 +19,7 @@ namespace Controlador
             return Conexion.getConnect();
         }
 
-        public static int VerificarPrimerUso_Controller()
+        public static bool VerificarPrimerUso_Controller()
         {
             return ModelLogin.ObtenerEmpresas();
         }
