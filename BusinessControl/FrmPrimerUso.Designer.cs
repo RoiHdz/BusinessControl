@@ -41,13 +41,10 @@
             this.txtRepresentante = new System.Windows.Forms.TextBox();
             this.lblDireccionEmpresa = new System.Windows.Forms.Label();
             this.txtDireccionEmpresa = new System.Windows.Forms.TextBox();
-            this.lblLogoEmpresa = new System.Windows.Forms.Label();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.btnAgregarEmpresa = new System.Windows.Forms.Button();
             this.lblTipoEmpresa = new System.Windows.Forms.Label();
             this.cmbTipoEmpresa = new System.Windows.Forms.ComboBox();
             this.MenuSuperior.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuSuperior
@@ -176,25 +173,6 @@
             this.txtDireccionEmpresa.Size = new System.Drawing.Size(182, 20);
             this.txtDireccionEmpresa.TabIndex = 22;
             // 
-            // lblLogoEmpresa
-            // 
-            this.lblLogoEmpresa.AutoSize = true;
-            this.lblLogoEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lblLogoEmpresa.ForeColor = System.Drawing.Color.White;
-            this.lblLogoEmpresa.Location = new System.Drawing.Point(36, 181);
-            this.lblLogoEmpresa.Name = "lblLogoEmpresa";
-            this.lblLogoEmpresa.Size = new System.Drawing.Size(100, 16);
-            this.lblLogoEmpresa.TabIndex = 23;
-            this.lblLogoEmpresa.Text = "Logo Empresa:";
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Location = new System.Drawing.Point(39, 214);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(134, 63);
-            this.pictureBoxLogo.TabIndex = 24;
-            this.pictureBoxLogo.TabStop = false;
-            // 
             // btnAgregarEmpresa
             // 
             this.btnAgregarEmpresa.Location = new System.Drawing.Point(634, 230);
@@ -218,6 +196,7 @@
             // 
             // cmbTipoEmpresa
             // 
+            this.cmbTipoEmpresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoEmpresa.FormattingEnabled = true;
             this.cmbTipoEmpresa.Location = new System.Drawing.Point(304, 132);
             this.cmbTipoEmpresa.Name = "cmbTipoEmpresa";
@@ -234,8 +213,6 @@
             this.Controls.Add(this.cmbTipoEmpresa);
             this.Controls.Add(this.lblTipoEmpresa);
             this.Controls.Add(this.btnAgregarEmpresa);
-            this.Controls.Add(this.pictureBoxLogo);
-            this.Controls.Add(this.lblLogoEmpresa);
             this.Controls.Add(this.txtDireccionEmpresa);
             this.Controls.Add(this.lblDireccionEmpresa);
             this.Controls.Add(this.txtRepresentante);
@@ -252,7 +229,6 @@
             this.Text = "FrmPrimerUso";
             this.MenuSuperior.ResumeLayout(false);
             this.MenuSuperior.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -273,8 +249,6 @@
         public System.Windows.Forms.TextBox txtRepresentante;
         private System.Windows.Forms.Label lblDireccionEmpresa;
         public System.Windows.Forms.TextBox txtDireccionEmpresa;
-        private System.Windows.Forms.Label lblLogoEmpresa;
-        private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Button btnAgregarEmpresa;
         private System.Windows.Forms.Label lblTipoEmpresa;
         private System.Windows.Forms.ComboBox cmbTipoEmpresa;
