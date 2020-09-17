@@ -22,15 +22,15 @@ namespace Controlador
         
         public string NombreEmpresa { get; set; }
         public string Correo { get; set; }
-        public string Direccion { get; set; }
         public string NIT { get; set; }
         public string Representante { get; set; }
+        public string Direccion { get; set; }
         public int TipoEmpresa { get; set; }
 
-        public PrimerUsoController() { }
+       
         public bool EnviarDatos_Controlleer()
         {
-            return ModeloPrimerUso.registrarEmpresa(NombreEmpresa, Correo, NIT, Representante,Direccion, TipoEmpresa);
+            return ModeloPrimerUso.registrarEmpresa(NombreEmpresa, Correo, NIT,Representante, Direccion, TipoEmpresa);
         }
     }
 }

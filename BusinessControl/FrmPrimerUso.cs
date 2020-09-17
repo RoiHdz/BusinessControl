@@ -42,9 +42,9 @@ namespace BusinessControl
             PrimerUsoController agregar = new PrimerUsoController();
             agregar.NombreEmpresa = txtNombreEmpresa.Text;
             agregar.Correo = txtCorreoEmpresa.Text;
-            agregar.Direccion = txtDireccionEmpresa.Text;
             agregar.NIT = txtNitEmpresa.Text;
             agregar.Representante = txtRepresentante.Text;
+            agregar.Direccion = txtDireccionEmpresa.Text;
             agregar.TipoEmpresa = Convert.ToInt16(cmbTipoEmpresa.SelectedValue);
             if (agregar.EnviarDatos_Controlleer() == false)
             {
@@ -55,22 +55,25 @@ namespace BusinessControl
                 LimpiarCampos();
             }
         }
+
         private void btnAgregarEmpresa_Click(object sender, EventArgs e)
         {
             EnvioDatos();
+
             this.Hide();
             Login mainMenu = new Login();
             mainMenu.Show();
             Hide();
         }
+
         void LimpiarCampos()
         {
             txtNombreEmpresa.Clear();
             txtCorreoEmpresa.Clear();
-            txtDireccionEmpresa.Clear();
             txtNitEmpresa.Clear();
             txtRepresentante.Clear();
-            
+            txtDireccionEmpresa.Clear();
+
 
         }
        
@@ -85,7 +88,7 @@ namespace BusinessControl
             try
             {
                 cmbTipoEmpresa.DataSource = PrimerUsoController.Cargar_TipoEmpresa();
-                cmbTipoEmpresa.DisplayMember = "TipoEmmpresa";
+                cmbTipoEmpresa.DisplayMember = "TipoEmpresa";
                 cmbTipoEmpresa.ValueMember = "idTipo_Empresa";
             }
             catch (Exception)
