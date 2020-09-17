@@ -38,11 +38,11 @@ namespace BusinessControl
         {
             try
             {
-                DgvClientes.DataSource = MainController.Cargar_Cliente();
+                DgvClientes.DataSource = ProveedoresController.Cargar_Proveedor();
             }
             catch (Exception)
             {
-                throw;
+                MessageBox.Show("Error al capturar datos");
             }
         }
 

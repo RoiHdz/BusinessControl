@@ -26,5 +26,10 @@ namespace BusinessControl
         {
             this.Close();
         }
+
+        private void btnAgregarEmpresa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

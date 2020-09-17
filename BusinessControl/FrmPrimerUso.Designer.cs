@@ -200,6 +200,7 @@
             this.btnAgregarEmpresa.TabIndex = 28;
             this.btnAgregarEmpresa.Text = "Agregar";
             this.btnAgregarEmpresa.UseVisualStyleBackColor = true;
+            this.btnAgregarEmpresa.Click += new System.EventHandler(this.btnAgregarEmpresa_Click);
             // 
             // FrmPrimerUso
             // 
