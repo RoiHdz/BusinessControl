@@ -17,9 +17,8 @@ namespace BusinessControl
             InitializeComponent();
         }
 
-        private void DgvClientes_Empresa_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            public static bool (string Nombre_empresa)
+
+        
         }
     }
-}
+  
