@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnPrimerUso = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnPrimerUso = new System.Windows.Forms.Button();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,6 +58,16 @@
             this.panel1.Size = new System.Drawing.Size(250, 330);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BusinessControl.Properties.Resources._1594977969469;
+            this.pictureBox1.Location = new System.Drawing.Point(35, 71);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 175);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnPrimerUso
             // 
             this.btnPrimerUso.BackColor = System.Drawing.SystemColors.GrayText;
@@ -69,16 +79,6 @@
             this.btnPrimerUso.Text = "Primer uso";
             this.btnPrimerUso.UseVisualStyleBackColor = false;
             this.btnPrimerUso.Click += new System.EventHandler(this.btnPrimerUso_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BusinessControl.Properties.Resources._1594977969469;
-            this.pictureBox1.Location = new System.Drawing.Point(35, 71);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 175);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // txtUsuario
             // 
