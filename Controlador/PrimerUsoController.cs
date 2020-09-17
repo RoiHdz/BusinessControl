@@ -15,5 +15,24 @@ namespace Controlador
         {
             return Conexion.getConnect();
         }
+        public static DataTable Cargar_TipoEmpresa()
+        {
+            return ModeloPrimerUso.CargarTipoEmpresa();
+        }
+        public static DataTable Cargar_Empresas()
+        {
+            return ModeloPrimerUso.ListaEmpresa();
+        }
+        public string NombreEmpresa { get; set; }
+        public string Correo { get; set; }
+        public string Direccion { get; set; }
+        public string NIT { get; set; }
+        public string Representante { get; set; }
+        public int TipoEmpresa { get; set; }
+
+        public bool EnviarDatos_Controller()
+        {
+            return ModeloPrimerUso.RegistrarEmpresa(NombreEmpresa, Correo, Direccion, NIT, Representante, TipoEmpresa);
+        }
     }
 }
