@@ -60,7 +60,7 @@ namespace BusinessControl
             EnvioDatos();
             this.Hide();
             Login mainMenu = new Login();
-            mainMenu.Show();           
+            mainMenu.Show();
             Hide();
         }
         void LimpiarCampos()
@@ -73,11 +73,18 @@ namespace BusinessControl
             
 
         }
-        private void FrmPrimerUso_Load_2(object sender, EventArgs e)
+       
+
+        private void cmbTipoEmpresa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmPrimerUso_Load(object sender, EventArgs e)
         {
             try
             {
-                cmbTipoEmpresa.DataSource = PrimerUsoController .Cargar_TipoEmpresa ();
+                cmbTipoEmpresa.DataSource = PrimerUsoController.Cargar_TipoEmpresa();
                 cmbTipoEmpresa.DisplayMember = "TipoEmmpresa";
                 cmbTipoEmpresa.ValueMember = "idTipo_Empresa";
             }
@@ -85,10 +92,6 @@ namespace BusinessControl
             {
                 throw;
             }
-        }
-
-        private void cmbTipoEmpresa_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
     }

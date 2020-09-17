@@ -53,12 +53,12 @@ namespace Modelo
             }
         }
 
-        public static bool RegistrarEmpresa(string NombreEmpresa, string Correo, string Direccion, string NIT, string Representante, int TipoEmpresa)
+        public static bool RegistrarEmpresa(string NombreEmpresa, string Correo, string NIT, string Representante, string Direccion, int TipoEmpresa)
         {
             bool retorno;
             try
             {
-                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbempresa (Empresa, Correo,  Direccion, NIT, Representante Legal, idTipo_Empresa) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')", NombreEmpresa, Correo, Direccion, NIT, Representante, TipoEmpresa), Conexion.getConnect());
+                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbempresa (Empresa, Correo,  NIT, Representante legal, Direccion , idTipo_Empresa) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')", NombreEmpresa, Correo, NIT, Representante, Direccion, TipoEmpresa), Conexion.getConnect());
                 retorno = Convert.ToBoolean(cmdinsert.ExecuteNonQuery());
                 return retorno;
             }

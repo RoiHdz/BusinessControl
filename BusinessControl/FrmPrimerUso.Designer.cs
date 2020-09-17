@@ -227,6 +227,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmPrimerUso";
             this.Text = "FrmPrimerUso";
+            this.Load += new System.EventHandler(this.FrmPrimerUso_Load);
             this.MenuSuperior.ResumeLayout(false);
             this.MenuSuperior.PerformLayout();
             this.ResumeLayout(false);
