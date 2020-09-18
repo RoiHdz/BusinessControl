@@ -8,7 +8,7 @@ using System.Data;
 
 namespace Modelo
 {
-    class ModeloMateriales
+    public class ModeloMateriales
     {
         //Metodos para mostrar en los combobox
         public static DataTable CargarEstadoMateriales()
@@ -97,12 +97,12 @@ namespace Modelo
             }
         }
         //Registrar los datos ingresados en el formulario
-        public static bool registrarmateriales(string PrimerNombre, string SegundNombre, string PrimerApellido, string SegundoApellido, string fecha_nacimiento, string dui, string correo, string direccion, int estado)
+        public static bool registrarmateriales(string NombreMaterial, string CodigoMaterial, double PrecioUnitario, string MarcaMaterial, int Proveedor, int Categoria, int Estado, string FechaIngreso, string Descripcion)
         {
             bool retorno;
             try
             {
-                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbCliente_Persona (DUI, Nombre1, Nombre2, Apellido1, Apellido2, Fecha_Nacimineto, Direccion, Correo, idEstado_ClienteP) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}')", dui, PrimerNombre, SegundNombre, PrimerApellido, SegundoApellido, fecha_nacimiento, direccion, correo, estado), Conexion.getConnect());
+                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbmateriales (Nombre, Codigo, Precio_Unitario, Descripcion, Marca, idProveedor, idCategoria, idEstado_Material, Fecha_Ingreso) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}')", NombreMaterial, CodigoMaterial, PrecioUnitario, Descripcion, MarcaMaterial, Proveedor, Categoria, Estado, FechaIngreso), Conexion.getConnect());
                 retorno = Convert.ToBoolean(cmdinsert.ExecuteNonQuery());
                 return retorno;
             }
