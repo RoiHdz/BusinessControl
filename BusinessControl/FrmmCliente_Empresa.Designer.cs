@@ -63,6 +63,7 @@
             this.btnModificar.TabIndex = 12;
             this.btnModificar.Text = "Modificar Cliente";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnagregar
             // 
@@ -72,6 +73,7 @@
             this.btnagregar.TabIndex = 11;
             this.btnagregar.Text = "Agregar Cliente";
             this.btnagregar.UseVisualStyleBackColor = true;
+            this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click);
             // 
             // DgvClientes_Empresa
             // 
@@ -89,6 +91,7 @@
             this.DgvClientes_Empresa.Name = "DgvClientes_Empresa";
             this.DgvClientes_Empresa.Size = new System.Drawing.Size(680, 455);
             this.DgvClientes_Empresa.TabIndex = 10;
+            this.DgvClientes_Empresa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvClientes_Empresa_CellContentClick);
             // 
             // FrmmCliente_Empresa
             // 
@@ -104,7 +107,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmmCliente_Empresa";
             this.Text = "FrmmClientes";
-            
+            this.Load += new System.EventHandler(this.FrmmCliente_Empresa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvClientes_Empresa)).EndInit();
             this.ResumeLayout(false);
 

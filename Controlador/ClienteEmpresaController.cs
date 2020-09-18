@@ -20,7 +20,7 @@ namespace Controlador
         {
             return ModeloClienteEmpresa.CargarEstado();
         }
-        public static DataTable Cargar_Proveedor()
+        public static DataTable Cargar_ClienteEmpresa()
         {
             return ModeloClienteEmpresa.ListaClienteEmpresa();
         }
