@@ -58,7 +58,7 @@ namespace BusinessControl
             {
                 cmbEstado.DataSource = ClienteEmpresaController.Cargar_Estado();
                 cmbEstado.DisplayMember = "Estado";
-                cmbEstado.ValueMember = "idEstado_Proveedor";
+                cmbEstado.ValueMember = "idEstado_Cliente";
             }
             catch (Exception)
             {

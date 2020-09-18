@@ -191,6 +191,7 @@
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmClienteEmpresa_hijo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmClienteEmpresa_hijo";
             this.Load += new System.EventHandler(this.FrmClienteEmpresa_hijo_Load_1);
             this.toolStrip1.ResumeLayout(false);

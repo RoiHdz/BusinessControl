@@ -20,13 +20,13 @@ namespace BusinessControl
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
-            FrmProveedores Frm = new FrmProveedores();
+            FrmClienteEmpresa_hijo Frm = new FrmClienteEmpresa_hijo();
             Frm.ShowDialog();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            FrmProveedores Frm = new FrmProveedores();
+            FrmClienteEmpresa_hijo Frm = new FrmClienteEmpresa_hijo();
             Frm.ShowDialog();
         }
 
