@@ -194,6 +194,7 @@
             this.cmbIdTipoUsuario.Name = "cmbIdTipoUsuario";
             this.cmbIdTipoUsuario.Size = new System.Drawing.Size(241, 21);
             this.cmbIdTipoUsuario.TabIndex = 21;
+            this.cmbIdTipoUsuario.SelectedIndexChanged += new System.EventHandler(this.cmbIdTipoUsuario_SelectedIndexChanged);
             // 
             // FrmRegistroUsuario
             // 

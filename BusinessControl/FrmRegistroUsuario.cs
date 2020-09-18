@@ -6,7 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 using Controlador;
 
 namespace BusinessControl
@@ -72,6 +74,11 @@ namespace BusinessControl
         private void BtnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void cmbIdTipoUsuario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
