@@ -87,9 +87,9 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DgvClientes_Empresa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DgvClientes_Empresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvClientes_Empresa.Location = new System.Drawing.Point(31, 11);
+            this.DgvClientes_Empresa.Location = new System.Drawing.Point(12, 11);
             this.DgvClientes_Empresa.Name = "DgvClientes_Empresa";
-            this.DgvClientes_Empresa.Size = new System.Drawing.Size(680, 455);
+            this.DgvClientes_Empresa.Size = new System.Drawing.Size(699, 455);
             this.DgvClientes_Empresa.TabIndex = 10;
             this.DgvClientes_Empresa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvClientes_Empresa_CellContentClick);
             // 

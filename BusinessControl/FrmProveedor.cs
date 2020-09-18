@@ -20,7 +20,7 @@ namespace BusinessControl
 
         private void DgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -34,8 +34,10 @@ namespace BusinessControl
             FrmProveedores Frm = new FrmProveedores();
             Frm.ShowDialog();
         }
+
         private void FrmProveedor_Load(object sender, EventArgs e)
         {
+
             try
             {
                 DgvClientes.DataSource = ProveedoresController.Cargar_Proveedor();
@@ -45,6 +47,5 @@ namespace BusinessControl
                 MessageBox.Show("Error al capturar datos");
             }
         }
-
     }
 }
