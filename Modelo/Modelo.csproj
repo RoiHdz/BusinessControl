@@ -48,6 +48,7 @@
     <Compile Include="ModelMain.cs" />
     <Compile Include="ModeloClienteEmpresa.cs" />
     <Compile Include="ModeloClienteP.cs" />
+    <Compile Include="ModeloMateriales.cs" />
     <Compile Include="ModeloPrimerUso.cs" />
     <Compile Include="ModeloProveedores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
