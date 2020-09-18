@@ -51,6 +51,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel1.Controls.Add(this.btnPrimerUso);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -72,9 +73,9 @@
             // 
             this.btnPrimerUso.BackColor = System.Drawing.SystemColors.GrayText;
             this.btnPrimerUso.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrimerUso.Location = new System.Drawing.Point(276, 80);
+            this.btnPrimerUso.Location = new System.Drawing.Point(35, 71);
             this.btnPrimerUso.Name = "btnPrimerUso";
-            this.btnPrimerUso.Size = new System.Drawing.Size(483, 223);
+            this.btnPrimerUso.Size = new System.Drawing.Size(180, 175);
             this.btnPrimerUso.TabIndex = 12;
             this.btnPrimerUso.Text = "Primer uso";
             this.btnPrimerUso.UseVisualStyleBackColor = false;
@@ -211,7 +212,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(780, 330);
-            this.Controls.Add(this.btnPrimerUso);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
