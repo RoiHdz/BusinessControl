@@ -87,7 +87,7 @@ namespace BusinessControl
             try
             {
                 cmbTipoEmpresa.DataSource = PrimerUsoController.Cargar_TipoEmpresa();
-                cmbTipoEmpresa.DisplayMember = "TipoEmpresa";
+                cmbTipoEmpresa.DisplayMember = "TipoEmmpresa";
                 cmbTipoEmpresa.ValueMember = "idTipo_Empresa";
             }
             catch (Exception)

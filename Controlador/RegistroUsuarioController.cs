@@ -11,14 +11,14 @@ namespace Controlador
 {
      public class RegistroUsuarioController
     {
-        public static object Cargar_Estado()
+        public static  MySqlConnection ConnectController()
         {
             return Conexion.getConnect();
         }
         //Metodo para mostrar los estados en el formulario FrmRegistroUsuario
-        public static DataTable IdTipoUsuario()
+        public static DataTable Cargar_TipoUsuario()
         {
-            return ModeloRegistroUsuario.Cargar_Estado();
+            return ModeloRegistroUsuario.CargarTipoUsuario();
         }
         
         public string Usuario { get; set; }

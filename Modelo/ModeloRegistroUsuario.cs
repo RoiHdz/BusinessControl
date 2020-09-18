@@ -10,7 +10,7 @@ namespace Modelo
 {
     public class ModeloRegistroUsuario
     {
-        public static DataTable Cargar_Estado()
+        public static DataTable CargarTipoUsuario()
         {
             DataTable data;
             try

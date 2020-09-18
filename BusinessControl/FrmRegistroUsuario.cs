@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 using Controlador;
 
 namespace BusinessControl
@@ -61,7 +60,7 @@ namespace BusinessControl
         {
             try
             {
-                cmbIdTipoUsuario.DataSource = RegistroUsuarioController.IdTipoUsuario();
+                cmbIdTipoUsuario.DataSource = RegistroUsuarioController.Cargar_TipoUsuario();
                 cmbIdTipoUsuario.DisplayMember = "Tipo_Usuario";
                 cmbIdTipoUsuario.ValueMember = "idTipo_Usuario";
             }
