@@ -46,6 +46,7 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="ModelLogin.cs" />
     <Compile Include="ModelMain.cs" />
+    <Compile Include="ModeloClienteEmpresa.cs" />
     <Compile Include="ModeloClienteP.cs" />
     <Compile Include="ModeloPrimerUso.cs" />
     <Compile Include="ModeloProveedores.cs" />

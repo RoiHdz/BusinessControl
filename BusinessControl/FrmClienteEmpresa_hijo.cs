@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
+using Controlador;
 
 namespace BusinessControl
 {
@@ -17,50 +19,56 @@ namespace BusinessControl
             InitializeComponent();
   
         }
-
-        private void label3_Click(object sender, EventArgs e)
+        void EnvioDatos()
         {
+            ClienteEmpresaController agregar = new ClienteEmpresaController();
+            agregar.NombreEmpresa = txtNombreEmpresa.Text;
+            agregar.Direccion = txtDirección.Text;
+            agregar.Correo = txtCorreo.Text;
+            agregar.EstadoCliente = Convert.ToInt16(cmbEstado.SelectedValue);
+            if (agregar.EnviarDatos_Controller() == false)
+            {
+                MessageBox.Show("El usuario no puedo ser ingresado", "Advertencia", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Warning);
 
+            }
+            else
+            {
+                LimpiarCampos();
+            }
         }
 
-        private void FrmClienteEmpresa_hijo_Load(object sender, EventArgs e)
-        {
 
+
+        void LimpiarCampos()
+        {
+            txtNombreEmpresa.Clear();
+            txtDirección.Clear();
+            txtCorreo.Clear();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
 
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            EnvioDatos();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void FrmClienteEmpresa_hijo_Load_1(object sender, EventArgs e)
         {
-
+            try
+            {
+                cmbEstado.DataSource = ClienteEmpresaController.Cargar_Estado();
+                cmbEstado.DisplayMember = "Estado";
+                cmbEstado.ValueMember = "idEstado_Proveedor";
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
-        private void toolStripLabel1_Click(object sender, EventArgs e)
+        private void BtnCerrar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }
