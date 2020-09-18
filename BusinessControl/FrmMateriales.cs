@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controlador;
 
 namespace BusinessControl
 {
@@ -56,6 +57,18 @@ namespace BusinessControl
         {
             FrmMaterial frm = new FrmMaterial();
             frm.ShowDialog();
+        }
+
+        private void FrmMateriales_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                DgvMateriales.DataSource = MaterialesController.Cargar_Materiales();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al capturar datos");
+            }
         }
     }
 }

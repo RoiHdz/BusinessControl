@@ -44,12 +44,12 @@
             this.txtMarcaMaterial = new System.Windows.Forms.TextBox();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblEstado = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.cmbCategoria = new System.Windows.Forms.ComboBox();
             this.cmbEstadoMaterial = new System.Windows.Forms.ComboBox();
             this.cmbProveedor = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpIngreso = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.MenuSuperior.SuspendLayout();
             this.SuspendLayout();
@@ -213,14 +213,15 @@
             this.lblEstado.TabIndex = 19;
             this.lblEstado.Text = "Estado:";
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Location = new System.Drawing.Point(511, 244);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 41);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregar.Location = new System.Drawing.Point(511, 244);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(99, 41);
+            this.btnAgregar.TabIndex = 34;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // button2
             // 
@@ -255,14 +256,14 @@
             this.cmbProveedor.Size = new System.Drawing.Size(229, 24);
             this.cmbProveedor.TabIndex = 38;
             // 
-            // dateTimePicker1
+            // dtpIngreso
             // 
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(256, 184);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(229, 21);
-            this.dateTimePicker1.TabIndex = 39;
+            this.dtpIngreso.CustomFormat = "yyyy-MM-dd";
+            this.dtpIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpIngreso.Location = new System.Drawing.Point(256, 184);
+            this.dtpIngreso.Name = "dtpIngreso";
+            this.dtpIngreso.Size = new System.Drawing.Size(229, 21);
+            this.dtpIngreso.TabIndex = 39;
             // 
             // label1
             // 
@@ -282,12 +283,12 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(752, 297);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpIngreso);
             this.Controls.Add(this.cmbProveedor);
             this.Controls.Add(this.cmbEstadoMaterial);
             this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.txtMarcaMaterial);
@@ -307,6 +308,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmMaterial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.FrmMaterial_Load);
             this.MenuSuperior.ResumeLayout(false);
             this.MenuSuperior.PerformLayout();
             this.ResumeLayout(false);
@@ -332,12 +334,12 @@
         public System.Windows.Forms.TextBox txtMarcaMaterial;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label lblEstado;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox cmbCategoria;
         private System.Windows.Forms.ComboBox cmbEstadoMaterial;
         private System.Windows.Forms.ComboBox cmbProveedor;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpIngreso;
         private System.Windows.Forms.Label label1;
     }
 }
