@@ -49,6 +49,7 @@
     <Compile Include="PrimerUsoController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProveedoresController.cs" />
+    <Compile Include="RegistroUsuarioController.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Modelo\Modelo.csproj">

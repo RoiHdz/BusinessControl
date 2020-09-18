@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPrimerUso = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,6 +42,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnRegistrarUsuario = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -59,16 +60,6 @@
             this.panel1.Size = new System.Drawing.Size(250, 330);
             this.panel1.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BusinessControl.Properties.Resources._1594977969469;
-            this.pictureBox1.Location = new System.Drawing.Point(35, 71);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 175);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnPrimerUso
             // 
             this.btnPrimerUso.BackColor = System.Drawing.SystemColors.GrayText;
@@ -80,6 +71,16 @@
             this.btnPrimerUso.Text = "Primer uso";
             this.btnPrimerUso.UseVisualStyleBackColor = false;
             this.btnPrimerUso.Click += new System.EventHandler(this.btnPrimerUso_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BusinessControl.Properties.Resources._1594977969469;
+            this.pictureBox1.Location = new System.Drawing.Point(35, 71);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 175);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // txtUsuario
             // 
@@ -206,12 +207,28 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // btnRegistrarUsuario
+            // 
+            this.btnRegistrarUsuario.BackColor = System.Drawing.Color.Lime;
+            this.btnRegistrarUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnRegistrarUsuario.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarUsuario.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.btnRegistrarUsuario.Location = new System.Drawing.Point(276, 21);
+            this.btnRegistrarUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegistrarUsuario.Name = "btnRegistrarUsuario";
+            this.btnRegistrarUsuario.Size = new System.Drawing.Size(162, 39);
+            this.btnRegistrarUsuario.TabIndex = 14;
+            this.btnRegistrarUsuario.Text = "Registrarse ";
+            this.btnRegistrarUsuario.UseVisualStyleBackColor = false;
+            this.btnRegistrarUsuario.Click += new System.EventHandler(this.btnRegistrarUsuario_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(780, 330);
+            this.Controls.Add(this.btnRegistrarUsuario);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
@@ -255,5 +272,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnPrimerUso;
+        private System.Windows.Forms.Button btnRegistrarUsuario;
     }
 }
