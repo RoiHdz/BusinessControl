@@ -131,5 +131,14 @@ namespace BusinessControl
             mainMenu.FormClosed += CerrarSesion;
             Hide();
         }
+
+        private void btnRegistrarUsuario_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmRegistroUsuario mainMenu = new FrmRegistroUsuario();
+            mainMenu.Show();
+            mainMenu.FormClosed += CerrarSesion;
+            Hide();
+        }
     }
 }

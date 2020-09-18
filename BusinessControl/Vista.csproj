@@ -107,6 +107,12 @@
     <Compile Include="FrmProveedores.Designer.cs">
       <DependentUpon>FrmProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRegistroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistroUsuario.Designer.cs">
+      <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface1.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProveedores.resx">
       <DependentUpon>FrmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistroUsuario.resx">
+      <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
