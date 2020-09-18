@@ -45,6 +45,7 @@
     <Compile Include="ClientepController.cs" />
     <Compile Include="LoginController.cs" />
     <Compile Include="MainController.cs" />
+    <Compile Include="MaterialesController.cs" />
     <Compile Include="PrimerUsoController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProveedoresController.cs" />
