@@ -39,7 +39,7 @@ namespace Modelo
             bool retorno;
             try
             {
-                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbususarios(Usuario, Contrasenia,  Nombre, Apellido, email, idTipo_Usuario) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')", Usuario, Contraseña, Nombre, Apellido, Correo, idTipoUsuario), Conexion.getConnect());
+                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbusuarios(Usuario, Contrasenia,  Nombre, Apellido, email, idTipo_Usuario) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')", Usuario, Contraseña, Nombre, Apellido, Correo, idTipoUsuario), Conexion.getConnect());
                 retorno = Convert.ToBoolean(cmdinsert.ExecuteNonQuery());
                 return retorno;
             }

@@ -46,6 +46,7 @@ namespace BusinessControl
             mainMenu.Show();
             Hide();
         }
+
         void LimpiarCampos()
         {
             txtUsuario.Clear();

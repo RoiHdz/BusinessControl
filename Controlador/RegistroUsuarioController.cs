@@ -30,7 +30,7 @@ namespace Controlador
 
         public bool EnviarDatos_Controller()
         {
-            return ModeloRegistroUsuario.RegistrarUsuario(Usuario, Contraseña, Nombre, Apellido, Correo, idTipoUsuario);
+            return ModeloRegistroUsuario.RegistrarUsuario (Usuario, Contraseña, Nombre, Apellido, Correo, idTipoUsuario);
         }
     }
 }
