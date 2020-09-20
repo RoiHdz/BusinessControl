@@ -35,6 +35,19 @@ namespace Modelo
             }
             catch (Exception) { return connect = null; }
         }
+        public abstract class ConnectionToSql
+        {
+            private readonly string connectionString;
 
+            public ConnectionToSql()
+            {
+                connectionString = "Server=DESKTOP-Q03NH46; DataBase=dbbusinesscontrol; integrated security = true";
+            }
+            protected MySqlConnection GetConnection()
+            {
+                return new MySqlConnection(connectionString);
+            }
+
+        }
     }
 }

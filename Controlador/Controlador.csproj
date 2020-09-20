@@ -44,6 +44,8 @@
     <Compile Include="ClienteEmpresaController.cs" />
     <Compile Include="ClientepController.cs" />
     <Compile Include="LoginController.cs" />
+    <Compile Include="MailServices\MasterMailServer.cs" />
+    <Compile Include="MailServices\SystemSupportMail.cs" />
     <Compile Include="MainController.cs" />
     <Compile Include="MaterialesController.cs" />
     <Compile Include="PrimerUsoController.cs" />
@@ -57,6 +59,7 @@
       <Name>Modelo</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
