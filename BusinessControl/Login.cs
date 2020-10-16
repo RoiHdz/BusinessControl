@@ -140,5 +140,10 @@ namespace BusinessControl
             mainMenu.FormClosed += CerrarSesion;
             Hide();
         }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
