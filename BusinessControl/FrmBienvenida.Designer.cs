@@ -61,9 +61,9 @@
             this.label1.ForeColor = System.Drawing.Color.DarkGray;
             this.label1.Location = new System.Drawing.Point(68, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(318, 26);
+            this.label1.Size = new System.Drawing.Size(177, 26);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Sistema de gestion empresarial";
+            this.label1.Text = "Business Control";
             // 
             // pictureBox2
             // 

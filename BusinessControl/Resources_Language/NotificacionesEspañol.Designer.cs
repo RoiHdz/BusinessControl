@@ -22,14 +22,14 @@ namespace BusinessControl.Resources_Language {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class español {
+    internal class NotificacionesEspañol {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal español() {
+        internal NotificacionesEspañol() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace BusinessControl.Resources_Language {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BusinessControl.Resources_Language.español", typeof(español).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BusinessControl.Resources_Language.NotificacionesEspañol", typeof(NotificacionesEspañol).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,74 +61,20 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a ACCEDER.
+        ///   Busca una cadena traducida similar a Alerta.
         /// </summary>
-        internal static string btnAcceder {
+        internal static string Encabezado1 {
             get {
-                return ResourceManager.GetString("btnAcceder", resourceCulture);
+                return ResourceManager.GetString("Encabezado1", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Clientes.
+        ///   Busca una cadena traducida similar a Estas seguro de cerrar la aplicacion?.
         /// </summary>
-        internal static string BtnCliente {
+        internal static string Mensaje1 {
             get {
-                return ResourceManager.GetString("BtnCliente", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Empresa.
-        /// </summary>
-        internal static string BtnCliente_Empresa {
-            get {
-                return ResourceManager.GetString("BtnCliente_Empresa", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Registrarse .
-        /// </summary>
-        internal static string btnRegistrarUsuario {
-            get {
-                return ResourceManager.GetString("btnRegistrarUsuario", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a LOGIN.
-        /// </summary>
-        internal static string label1 {
-            get {
-                return ResourceManager.GetString("label1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Has olvidado la contraseña?.
-        /// </summary>
-        internal static string linkLabel1 {
-            get {
-                return ResourceManager.GetString("linkLabel1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Contraseña.
-        /// </summary>
-        internal static string txtPassword {
-            get {
-                return ResourceManager.GetString("txtPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Usuario.
-        /// </summary>
-        internal static string txtUsuario {
-            get {
-                return ResourceManager.GetString("txtUsuario", resourceCulture);
+                return ResourceManager.GetString("Mensaje1", resourceCulture);
             }
         }
     }

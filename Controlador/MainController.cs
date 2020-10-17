@@ -11,6 +11,8 @@ namespace Controlador
 {
     public class MainController : AtributosMain
     {
+        public static int idioma { get; set; }
+
         public static MySqlConnection ConnectController()
         {
             return Conexion.getConnect();

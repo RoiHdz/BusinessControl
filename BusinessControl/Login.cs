@@ -88,6 +88,16 @@ namespace BusinessControl
             bool acceso = LoginController.Acceso_Controller();
             if (acceso == true)
             {
+                
+                if (RdEspañol.Checked == true || (RdEspañol.Checked== false && RdEnglish.Checked == false))
+                {
+                    MainController.idioma = 1;
+                }
+                else
+                {
+                    MainController.idioma = 2;
+                }
+
                 this.Hide();
                 FrmBienvenida Bienvenida = new FrmBienvenida(txtUsuario.Text);
                 Bienvenida.ShowDialog();

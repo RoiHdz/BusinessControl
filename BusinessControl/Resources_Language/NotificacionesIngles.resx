@@ -117,28 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnAcceder" xml:space="preserve">
-    <value>TO ACCESS</value>
+  <data name="Encabezado1" xml:space="preserve">
+    <value>Alert</value>
   </data>
-  <data name="BtnCliente" xml:space="preserve">
-    <value>Client</value>
-  </data>
-  <data name="BtnCliente_Empresa" xml:space="preserve">
-    <value>Company</value>
-  </data>
-  <data name="btnRegistrarUsuario" xml:space="preserve">
-    <value>check in</value>
-  </data>
-  <data name="label1" xml:space="preserve">
-    <value>LOGIN</value>
-  </data>
-  <data name="linkLabel1" xml:space="preserve">
-    <value>Have you forgotten the password?</value>
-  </data>
-  <data name="txtPassword" xml:space="preserve">
-    <value>password</value>
-  </data>
-  <data name="txtUsuario" xml:space="preserve">
-    <value>user</value>
+  <data name="Mensaje1" xml:space="preserve">
+    <value>Are you sure to close the application?</value>
   </data>
 </root>

@@ -41,6 +41,7 @@
             this.BtnLogOut = new System.Windows.Forms.Button();
             this.BtnCliente = new System.Windows.Forms.Button();
             this.pnlDatos = new System.Windows.Forms.Panel();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblUsuaio = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -57,7 +58,6 @@
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.PanelContenedor = new System.Windows.Forms.Panel();
-            this.lblEmail = new System.Windows.Forms.Label();
             this.PanelMenu.SuspendLayout();
             this.PanelClientes_SubMenu.SuspendLayout();
             this.pnlDatos.SuspendLayout();
@@ -258,6 +258,15 @@
             this.pnlDatos.Size = new System.Drawing.Size(243, 92);
             this.pnlDatos.TabIndex = 0;
             // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(89, 44);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(41, 16);
+            this.lblEmail.TabIndex = 17;
+            this.lblEmail.Text = "label2";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -425,15 +434,7 @@
             this.PanelContenedor.Name = "PanelContenedor";
             this.PanelContenedor.Size = new System.Drawing.Size(1057, 616);
             this.PanelContenedor.TabIndex = 8;
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(89, 44);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(41, 16);
-            this.lblEmail.TabIndex = 17;
-            this.lblEmail.Text = "label2";
+            this.PanelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelContenedor_Paint);
             // 
             // FrmInicio
             // 

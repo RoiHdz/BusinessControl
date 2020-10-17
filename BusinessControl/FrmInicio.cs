@@ -55,12 +55,28 @@ namespace BusinessControl
         }
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Estas seguro de cerrar la aplicacion?",
-                "Alerta", MessageBoxButtons.YesNo,
-                MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (MainController.idioma==1)
             {
-                Application.Exit();
+                DialogResult dr = MessageBox.Show(Resources_Language.NotificacionesEspañol.Mensaje1,
+             Resources_Language.NotificacionesEspañol.Encabezado1, MessageBoxButtons.YesNo,
+             MessageBoxIcon.Warning) ;
+                if (dr == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
             }
+            else
+            {
+                DialogResult dr = MessageBox.Show(Resources_Language.NotificacionesIngles.Mensaje1,
+             Resources_Language.NotificacionesIngles.Encabezado1, MessageBoxButtons.YesNo,
+             MessageBoxIcon.Warning);
+                if (dr == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+            }
+            
+            
 
         }
         private void AbrirFormInPanel(object Formhijo)
@@ -94,6 +110,18 @@ namespace BusinessControl
             }
         }
 
+        void verificacionIdioma()
+        {
+            if (MainController.idioma == 1)
+            {
+
+            }
+            else
+            {
+                BtnCliente.Text = Resources_Language.ingles.BtnCliente;
+                BtnCliente_Empresa.Text = Resources_Language.ingles.BtnCliente_Empresa;
+            }
+        }
         private void BtnMateriales_Click_1(object sender, EventArgs e)
         {
             AbrirFormInPanel(new FrmMateriales());
@@ -136,6 +164,8 @@ namespace BusinessControl
 
         private void FrmInicio_Load(object sender, EventArgs e)
         {
+            verificacionIdioma();
+
             try
             {
                 lblUsuaio.Text = usuario;
@@ -154,6 +184,11 @@ namespace BusinessControl
         }
 
         private void BtnMinimizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PanelContenedor_Paint(object sender, PaintEventArgs e)
         {
 
         }

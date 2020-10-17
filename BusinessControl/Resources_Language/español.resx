@@ -120,6 +120,12 @@
   <data name="btnAcceder" xml:space="preserve">
     <value>ACCEDER</value>
   </data>
+  <data name="BtnCliente" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="BtnCliente_Empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
   <data name="btnRegistrarUsuario" xml:space="preserve">
     <value>Registrarse </value>
   </data>
