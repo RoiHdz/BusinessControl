@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 using Controlador;
+using BusinessControl.Resources_Language;
 
 namespace BusinessControl
 {
@@ -143,6 +144,27 @@ namespace BusinessControl
 
         private void txtUsuario_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtUsuario.Text = Resources_Language.español.txtUsuario;
+            txtPassword.Text = Resources_Language.español.txtPassword;
+            btnRegistrarUsuario.Text = Resources_Language.español.btnRegistrarUsuario;
+            label1.Text = español.label1;
+            btnAcceder = Resources_Language.español.btnAcceder;
+            linkLabel1 = Resources_Language.ingles.linkLabel1;
+        }
+
+        private void RdEnglish_CheckedChanged(object sender, EventArgs e)
+        {
+            txtUsuario.Text = Resources_Language.ingles.txtUsuario;
+            txtPassword.Text = Resources_Language.ingles.txtPassword;
+            btnRegistrarUsuario.Text = Resources_Language.ingles.btnRegistrarUsuario;
+            label1.Text = Resources_Language.ingles.label1;
+            btnAcceder = Resources_Language.ingles.btnAcceder;
+            linkLabel1 = Resources_Language.ingles.linkLabel1;
 
         }
     }

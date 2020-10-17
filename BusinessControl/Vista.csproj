@@ -134,6 +134,16 @@
     <Compile Include="FrmProveedor.Designer.cs">
       <DependentUpon>FrmProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Resources_Language\español.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>español.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources_Language\ingles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ingles.resx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmBienvenida.resx">
       <DependentUpon>FrmBienvenida.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +195,14 @@
     </Compile>
     <EmbeddedResource Include="FrmProveedor.resx">
       <DependentUpon>FrmProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources_Language\español.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>español.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources_Language\ingles.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ingles.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

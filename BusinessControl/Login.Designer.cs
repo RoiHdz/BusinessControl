@@ -43,6 +43,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnRegistrarUsuario = new System.Windows.Forms.Button();
+            this.RdEspañol = new System.Windows.Forms.RadioButton();
+            this.RdEnglish = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -237,12 +239,38 @@
             this.btnRegistrarUsuario.UseVisualStyleBackColor = false;
             this.btnRegistrarUsuario.Click += new System.EventHandler(this.btnRegistrarUsuario_Click);
             // 
+            // RdEspañol
+            // 
+            this.RdEspañol.AutoSize = true;
+            this.RdEspañol.Location = new System.Drawing.Point(822, 13);
+            this.RdEspañol.Name = "RdEspañol";
+            this.RdEspañol.Size = new System.Drawing.Size(80, 21);
+            this.RdEspañol.TabIndex = 15;
+            this.RdEspañol.TabStop = true;
+            this.RdEspañol.Text = "Español";
+            this.RdEspañol.UseVisualStyleBackColor = true;
+            this.RdEspañol.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // RdEnglish
+            // 
+            this.RdEnglish.AutoSize = true;
+            this.RdEnglish.Location = new System.Drawing.Point(822, 53);
+            this.RdEnglish.Name = "RdEnglish";
+            this.RdEnglish.Size = new System.Drawing.Size(75, 21);
+            this.RdEnglish.TabIndex = 16;
+            this.RdEnglish.TabStop = true;
+            this.RdEnglish.Text = "English";
+            this.RdEnglish.UseVisualStyleBackColor = true;
+            this.RdEnglish.CheckedChanged += new System.EventHandler(this.RdEnglish_CheckedChanged);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1040, 406);
+            this.Controls.Add(this.RdEnglish);
+            this.Controls.Add(this.RdEspañol);
             this.Controls.Add(this.btnRegistrarUsuario);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
@@ -289,5 +317,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnPrimerUso;
         private System.Windows.Forms.Button btnRegistrarUsuario;
+        private System.Windows.Forms.RadioButton RdEspañol;
+        private System.Windows.Forms.RadioButton RdEnglish;
     }
 }
