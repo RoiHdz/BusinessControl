@@ -152,9 +152,9 @@ namespace BusinessControl
             txtUsuario.Text = Resources_Language.español.txtUsuario;
             txtPassword.Text = Resources_Language.español.txtPassword;
             btnRegistrarUsuario.Text = Resources_Language.español.btnRegistrarUsuario;
-            label1.Text = español.label1;
-            btnAcceder = Resources_Language.español.btnAcceder;
-            linkLabel1 = Resources_Language.ingles.linkLabel1;
+            label1.Text = Resources_Language .español.label1;
+            btnAcceder.Text = Resources_Language.español.btnAcceder;
+            linkLabel1.Text = Resources_Language.español.linkLabel1;
         }
 
         private void RdEnglish_CheckedChanged(object sender, EventArgs e)
@@ -163,8 +163,8 @@ namespace BusinessControl
             txtPassword.Text = Resources_Language.ingles.txtPassword;
             btnRegistrarUsuario.Text = Resources_Language.ingles.btnRegistrarUsuario;
             label1.Text = Resources_Language.ingles.label1;
-            btnAcceder = Resources_Language.ingles.btnAcceder;
-            linkLabel1 = Resources_Language.ingles.linkLabel1;
+            btnAcceder.Text = Resources_Language.ingles.btnAcceder;
+            linkLabel1.Text = Resources_Language.ingles.linkLabel1;
 
         }
     }
