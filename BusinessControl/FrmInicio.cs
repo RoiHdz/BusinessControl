@@ -120,6 +120,14 @@ namespace BusinessControl
             {
                 BtnCliente.Text = Resources_Language.ingles.BtnCliente;
                 BtnCliente_Empresa.Text = Resources_Language.ingles.BtnCliente_Empresa;
+                btnCliente_Persona.Text = Resources_Language.ingles.btnCliente_Persona;
+                BtnProveedor.Text = Resources_Language.ingles.BtnProveedor;
+                BtnMateriales.Text = Resources_Language.ingles.BtnMateriales;
+                BtnPresupuesto.Text = Resources_Language.ingles.BtnPresupuesto;
+                btnProyecto.Text = Resources_Language.ingles.btnProyecto;
+                btnAdministrar.Text = Resources_Language.ingles.btnAdministrar;
+                BtnLogOut.Text = Resources_Language.ingles.BtnLogOut;
+                btnConectar.Text = Resources_Language.ingles.btnConectar;
             }
         }
         private void BtnMateriales_Click_1(object sender, EventArgs e)
@@ -146,7 +154,21 @@ namespace BusinessControl
 
         private void btnConectar_Click(object sender, EventArgs e)
         {
-            if (MainController.ConnectController() == null)
+            if (MainController.idioma == 1)
+            {
+                DialogResult dr = MessageBox.Show(Resources_Language.NotificacionesEspañol.MensajeConexion1,
+             Resources_Language.NotificacionesEspañol.EncabezadoConexion1, MessageBoxButtons.YesNo,
+             MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                DialogResult dr = MessageBox.Show(Resources_Language.NotificacionesIngles.MensajeConexion1,
+             Resources_Language.NotificacionesIngles.EncabezadoConexion1, MessageBoxButtons.YesNo,
+             MessageBoxIcon.Warning);
+
+            }
+            if (MainController.ConnectController() == null  )
             {
                 MessageBox.Show("Error al intentar conectar", "ERROR 03", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -154,6 +176,7 @@ namespace BusinessControl
             {
                 MessageBox.Show("Conexion exitosa!", "Prosceso compleatdo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)

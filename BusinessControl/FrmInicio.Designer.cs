@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.PanelMenu = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAdministrar = new System.Windows.Forms.Button();
+            this.btnProyecto = new System.Windows.Forms.Button();
             this.BtnPresupuesto = new System.Windows.Forms.Button();
             this.BtnMateriales = new System.Windows.Forms.Button();
             this.BtnProveedor = new System.Windows.Forms.Button();
@@ -74,8 +74,8 @@
             // PanelMenu
             // 
             this.PanelMenu.BackColor = System.Drawing.Color.LimeGreen;
-            this.PanelMenu.Controls.Add(this.button2);
-            this.PanelMenu.Controls.Add(this.button1);
+            this.PanelMenu.Controls.Add(this.btnAdministrar);
+            this.PanelMenu.Controls.Add(this.btnProyecto);
             this.PanelMenu.Controls.Add(this.BtnPresupuesto);
             this.PanelMenu.Controls.Add(this.BtnMateriales);
             this.PanelMenu.Controls.Add(this.BtnProveedor);
@@ -89,37 +89,37 @@
             this.PanelMenu.Size = new System.Drawing.Size(243, 616);
             this.PanelMenu.TabIndex = 4;
             // 
-            // button2
+            // btnAdministrar
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::BusinessControl.Properties.Resources.profile;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 403);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(243, 45);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Administrar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAdministrar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAdministrar.FlatAppearance.BorderSize = 0;
+            this.btnAdministrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdministrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdministrar.ForeColor = System.Drawing.Color.White;
+            this.btnAdministrar.Image = global::BusinessControl.Properties.Resources.profile;
+            this.btnAdministrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdministrar.Location = new System.Drawing.Point(0, 403);
+            this.btnAdministrar.Name = "btnAdministrar";
+            this.btnAdministrar.Size = new System.Drawing.Size(243, 45);
+            this.btnAdministrar.TabIndex = 11;
+            this.btnAdministrar.Text = "Administrar";
+            this.btnAdministrar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnProyecto
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::BusinessControl.Properties.Resources.list;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 358);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(243, 45);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Proyecto";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnProyecto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProyecto.FlatAppearance.BorderSize = 0;
+            this.btnProyecto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProyecto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProyecto.ForeColor = System.Drawing.Color.White;
+            this.btnProyecto.Image = global::BusinessControl.Properties.Resources.list;
+            this.btnProyecto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProyecto.Location = new System.Drawing.Point(0, 358);
+            this.btnProyecto.Name = "btnProyecto";
+            this.btnProyecto.Size = new System.Drawing.Size(243, 45);
+            this.btnProyecto.TabIndex = 10;
+            this.btnProyecto.Text = "Proyecto";
+            this.btnProyecto.UseVisualStyleBackColor = true;
             // 
             // BtnPresupuesto
             // 
@@ -487,8 +487,8 @@
         private System.Windows.Forms.Button btnCliente_Persona;
         private System.Windows.Forms.Button BtnCliente_Empresa;
         private System.Windows.Forms.Button BtnPresupuesto;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnProyecto;
+        private System.Windows.Forms.Button btnAdministrar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;

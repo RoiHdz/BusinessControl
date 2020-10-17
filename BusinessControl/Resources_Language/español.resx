@@ -126,6 +126,12 @@
   <data name="BtnCliente_Empresa" xml:space="preserve">
     <value>Empresa</value>
   </data>
+  <data name="btnCliente_Persona" xml:space="preserve">
+    <value>Persona</value>
+  </data>
+  <data name="BtnProveedor" xml:space="preserve">
+    <value />
+  </data>
   <data name="btnRegistrarUsuario" xml:space="preserve">
     <value>Registrarse </value>
   </data>

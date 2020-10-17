@@ -120,11 +120,35 @@
   <data name="btnAcceder" xml:space="preserve">
     <value>TO ACCESS</value>
   </data>
+  <data name="btnAdministrar" xml:space="preserve">
+    <value>Manage</value>
+  </data>
   <data name="BtnCliente" xml:space="preserve">
     <value>Client</value>
   </data>
   <data name="BtnCliente_Empresa" xml:space="preserve">
     <value>Company</value>
+  </data>
+  <data name="btnCliente_Persona" xml:space="preserve">
+    <value>Person</value>
+  </data>
+  <data name="btnConectar" xml:space="preserve">
+    <value>Try Connection</value>
+  </data>
+  <data name="BtnLogOut" xml:space="preserve">
+    <value>Sign off</value>
+  </data>
+  <data name="BtnMateriales" xml:space="preserve">
+    <value>Materials</value>
+  </data>
+  <data name="BtnPresupuesto" xml:space="preserve">
+    <value>Budget</value>
+  </data>
+  <data name="BtnProveedor" xml:space="preserve">
+    <value>Provider</value>
+  </data>
+  <data name="btnProyecto" xml:space="preserve">
+    <value>Project</value>
   </data>
   <data name="btnRegistrarUsuario" xml:space="preserve">
     <value>check in</value>

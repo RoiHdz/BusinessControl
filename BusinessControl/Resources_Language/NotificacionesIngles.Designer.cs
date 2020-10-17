@@ -70,11 +70,29 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Process Completed.
+        /// </summary>
+        internal static string EncabezadoConexion1 {
+            get {
+                return ResourceManager.GetString("EncabezadoConexion1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Are you sure to close the application?.
         /// </summary>
         internal static string Mensaje1 {
             get {
                 return ResourceManager.GetString("Mensaje1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Successful connection.
+        /// </summary>
+        internal static string MensajeConexion1 {
+            get {
+                return ResourceManager.GetString("MensajeConexion1", resourceCulture);
             }
         }
     }

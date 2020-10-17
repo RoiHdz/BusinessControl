@@ -120,7 +120,13 @@
   <data name="Encabezado1" xml:space="preserve">
     <value>Alert</value>
   </data>
+  <data name="EncabezadoConexion1" xml:space="preserve">
+    <value>Process Completed</value>
+  </data>
   <data name="Mensaje1" xml:space="preserve">
     <value>Are you sure to close the application?</value>
+  </data>
+  <data name="MensajeConexion1" xml:space="preserve">
+    <value>Successful connection</value>
   </data>
 </root>

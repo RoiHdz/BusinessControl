@@ -70,6 +70,15 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Manage.
+        /// </summary>
+        internal static string btnAdministrar {
+            get {
+                return ResourceManager.GetString("btnAdministrar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Client.
         /// </summary>
         internal static string BtnCliente {
@@ -84,6 +93,69 @@ namespace BusinessControl.Resources_Language {
         internal static string BtnCliente_Empresa {
             get {
                 return ResourceManager.GetString("BtnCliente_Empresa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Person.
+        /// </summary>
+        internal static string btnCliente_Persona {
+            get {
+                return ResourceManager.GetString("btnCliente_Persona", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Try Connection.
+        /// </summary>
+        internal static string btnConectar {
+            get {
+                return ResourceManager.GetString("btnConectar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Sign off.
+        /// </summary>
+        internal static string BtnLogOut {
+            get {
+                return ResourceManager.GetString("BtnLogOut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Materials.
+        /// </summary>
+        internal static string BtnMateriales {
+            get {
+                return ResourceManager.GetString("BtnMateriales", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Budget.
+        /// </summary>
+        internal static string BtnPresupuesto {
+            get {
+                return ResourceManager.GetString("BtnPresupuesto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Provider.
+        /// </summary>
+        internal static string BtnProveedor {
+            get {
+                return ResourceManager.GetString("BtnProveedor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Project.
+        /// </summary>
+        internal static string btnProyecto {
+            get {
+                return ResourceManager.GetString("btnProyecto", resourceCulture);
             }
         }
         

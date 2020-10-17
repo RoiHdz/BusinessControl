@@ -88,6 +88,24 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Persona.
+        /// </summary>
+        internal static string btnCliente_Persona {
+            get {
+                return ResourceManager.GetString("btnCliente_Persona", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a .
+        /// </summary>
+        internal static string BtnProveedor {
+            get {
+                return ResourceManager.GetString("BtnProveedor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Registrarse .
         /// </summary>
         internal static string btnRegistrarUsuario {
