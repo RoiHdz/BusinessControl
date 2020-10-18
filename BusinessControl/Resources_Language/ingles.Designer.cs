@@ -79,6 +79,15 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Add Client.
+        /// </summary>
+        internal static string btnagregar {
+            get {
+                return ResourceManager.GetString("btnagregar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Client.
         /// </summary>
         internal static string BtnCliente {
@@ -115,6 +124,15 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Delete Client.
+        /// </summary>
+        internal static string btnEliminar {
+            get {
+                return ResourceManager.GetString("btnEliminar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Sign off.
         /// </summary>
         internal static string BtnLogOut {
@@ -129,6 +147,15 @@ namespace BusinessControl.Resources_Language {
         internal static string BtnMateriales {
             get {
                 return ResourceManager.GetString("BtnMateriales", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Modify Client.
+        /// </summary>
+        internal static string btnModificar {
+            get {
+                return ResourceManager.GetString("btnModificar", resourceCulture);
             }
         }
         
@@ -165,6 +192,15 @@ namespace BusinessControl.Resources_Language {
         internal static string btnRegistrarUsuario {
             get {
                 return ResourceManager.GetString("btnRegistrarUsuario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Find Client.
+        /// </summary>
+        internal static string butoon4 {
+            get {
+                return ResourceManager.GetString("butoon4", resourceCulture);
             }
         }
         

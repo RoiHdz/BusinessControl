@@ -165,4 +165,16 @@
   <data name="txtUsuario" xml:space="preserve">
     <value>USER</value>
   </data>
+  <data name="btnagregar" xml:space="preserve">
+    <value>Add Client</value>
+  </data>
+  <data name="btnEliminar" xml:space="preserve">
+    <value>Delete Client</value>
+  </data>
+  <data name="btnModificar" xml:space="preserve">
+    <value>Modify Client</value>
+  </data>
+  <data name="butoon4" xml:space="preserve">
+    <value>Find Client</value>
+  </data>
 </root>
