@@ -198,9 +198,9 @@ namespace BusinessControl.Resources_Language {
         /// <summary>
         ///   Busca una cadena traducida similar a Find Client.
         /// </summary>
-        internal static string butoon4 {
+        internal static string button4 {
             get {
-                return ResourceManager.GetString("butoon4", resourceCulture);
+                return ResourceManager.GetString("button4", resourceCulture);
             }
         }
         

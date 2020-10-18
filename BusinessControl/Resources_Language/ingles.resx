@@ -174,7 +174,7 @@
   <data name="btnModificar" xml:space="preserve">
     <value>Modify Client</value>
   </data>
-  <data name="butoon4" xml:space="preserve">
+  <data name="button4" xml:space="preserve">
     <value>Find Client</value>
   </data>
 </root>

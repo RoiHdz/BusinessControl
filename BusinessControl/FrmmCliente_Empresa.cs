@@ -55,10 +55,10 @@ namespace BusinessControl
             }
             else
             {
-                btnagregar.Text = Resources_Language.ingles.btnagregar;
+                btnagregar.Text = Resources_Language.ingles.btnagregar ;
                 btnModificar.Text = Resources_Language.ingles.btnModificar;
                 btnEliminar.Text = Resources_Language.ingles.btnEliminar;
-                button4.Text = Resources_Language.ingles.butoon4;
+                button4.Text = Resources_Language.ingles.button4;
             }
         }
     }
