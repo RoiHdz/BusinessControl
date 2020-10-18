@@ -123,10 +123,22 @@
   <data name="EncabezadoConexion1" xml:space="preserve">
     <value>Proceso Completado</value>
   </data>
+  <data name="EncabezadoConexion2" xml:space="preserve">
+    <value>ERROR 03</value>
+  </data>
+  <data name="EncabezadoLogOut" xml:space="preserve">
+    <value />
+  </data>
   <data name="Mensaje1" xml:space="preserve">
     <value>Estas seguro de cerrar la aplicacion?</value>
   </data>
   <data name="MensajeConexion1" xml:space="preserve">
     <value>Conexion Exitosa</value>
+  </data>
+  <data name="MensajeConexion2" xml:space="preserve">
+    <value>Error al intentar conectar</value>
+  </data>
+  <data name="MensajeLogOut" xml:space="preserve">
+    <value>Estas seguro de salir de la sesion?</value>
   </data>
 </root>

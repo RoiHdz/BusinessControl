@@ -311,6 +311,7 @@
             this.lblFecha.Size = new System.Drawing.Size(65, 22);
             this.lblFecha.TabIndex = 6;
             this.lblFecha.Text = "label2";
+            this.lblFecha.Click += new System.EventHandler(this.lblFecha_Click);
             // 
             // lblHora
             // 

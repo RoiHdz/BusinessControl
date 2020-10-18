@@ -79,6 +79,15 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a ERROR 03.
+        /// </summary>
+        internal static string EncabezadoConexion2 {
+            get {
+                return ResourceManager.GetString("EncabezadoConexion2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Are you sure to close the application?.
         /// </summary>
         internal static string Mensaje1 {
@@ -93,6 +102,24 @@ namespace BusinessControl.Resources_Language {
         internal static string MensajeConexion1 {
             get {
                 return ResourceManager.GetString("MensajeConexion1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Error when trying to connect.
+        /// </summary>
+        internal static string MensajeConexion2 {
+            get {
+                return ResourceManager.GetString("MensajeConexion2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Are you sure you want to leave the session?.
+        /// </summary>
+        internal static string MensajeLogOut {
+            get {
+                return ResourceManager.GetString("MensajeLogOut", resourceCulture);
             }
         }
     }

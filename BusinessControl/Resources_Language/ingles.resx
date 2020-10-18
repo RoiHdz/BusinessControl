@@ -160,9 +160,9 @@
     <value>Have you forgotten the password?</value>
   </data>
   <data name="txtPassword" xml:space="preserve">
-    <value>password</value>
+    <value>PASSWORD</value>
   </data>
   <data name="txtUsuario" xml:space="preserve">
-    <value>user</value>
+    <value>USER</value>
   </data>
 </root>

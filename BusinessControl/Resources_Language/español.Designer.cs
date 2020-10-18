@@ -133,7 +133,7 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Contraseña.
+        ///   Busca una cadena traducida similar a CONTRASEÑA.
         /// </summary>
         internal static string txtPassword {
             get {
@@ -142,7 +142,7 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Usuario.
+        ///   Busca una cadena traducida similar a USUARIO.
         /// </summary>
         internal static string txtUsuario {
             get {

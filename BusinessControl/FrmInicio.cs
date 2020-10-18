@@ -96,18 +96,42 @@ namespace BusinessControl
         }
         private void horafecha_Tick_1(object sender, EventArgs e)
         {
-            lblHora.Text = DateTime.Now.ToString("hh:mm:ss");
-            lblFecha.Text = DateTime.Now.ToLongDateString();
+            if (MainController.idioma == 1)
+            {
+                lblHora.Text = DateTime.Now.ToString("hh:mm:ss");
+                lblFecha.Text = DateTime.Now.ToLongDateString();
+            }
+            else
+            {
+                lblHora.Text = DateTime.Now.ToString("hh:mm:ss");
+                lblFecha.Text = DateTime.Now.ToString("MM/dd/yyy");
+            }
         }
 
         private void BtnLogOut_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Estas seguro de salir de la sesion?",
-                "Alerta", MessageBoxButtons.YesNo,
-                MessageBoxIcon.Warning) == DialogResult.Yes)
+
+            if (MainController.idioma == 1)
             {
-                this.Close();
+                DialogResult dr = MessageBox.Show(Resources_Language.NotificacionesEspañol.MensajeLogOut,
+             Resources_Language.NotificacionesEspañol.Encabezado1, MessageBoxButtons.YesNo,
+             MessageBoxIcon.Warning);
+                if (dr == DialogResult.Yes)
+                {
+                    this.Close();
+                }
             }
+            else
+            {
+                DialogResult dr = MessageBox.Show(Resources_Language.NotificacionesIngles.MensajeLogOut,
+             Resources_Language.NotificacionesIngles.Encabezado1, MessageBoxButtons.YesNo,
+             MessageBoxIcon.Warning);
+                if (dr == DialogResult.Yes)
+                {
+                    this.Close();
+                }
+            }
+
         }
 
         void verificacionIdioma()
@@ -154,29 +178,33 @@ namespace BusinessControl
 
         private void btnConectar_Click(object sender, EventArgs e)
         {
-            if (MainController.idioma == 1)
-            {
-                DialogResult dr = MessageBox.Show(Resources_Language.NotificacionesEspañol.MensajeConexion1,
-             Resources_Language.NotificacionesEspañol.EncabezadoConexion1, MessageBoxButtons.YesNo,
-             MessageBoxIcon.Warning);
-
-            }
-            else
-            {
-                DialogResult dr = MessageBox.Show(Resources_Language.NotificacionesIngles.MensajeConexion1,
-             Resources_Language.NotificacionesIngles.EncabezadoConexion1, MessageBoxButtons.YesNo,
-             MessageBoxIcon.Warning);
-
-            }
             if (MainController.ConnectController() == null  )
             {
-                MessageBox.Show("Error al intentar conectar", "ERROR 03", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Resources_Language.NotificacionesEspañol.MensajeConexion2,
+                    Resources_Language.NotificacionesEspañol.EncabezadoConexion2, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
             }
             else
             {
-                MessageBox.Show("Conexion exitosa!", "Prosceso compleatdo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(Resources_Language.NotificacionesEspañol.MensajeConexion1,
+             Resources_Language.NotificacionesEspañol.EncabezadoConexion1, MessageBoxButtons.OK, MessageBoxIcon.Information);
+               
+            }
+            if (MainController.idioma==1)
+            {
+                MessageBox.Show(Resources_Language.NotificacionesEspañol.MensajeConexion1,
+             Resources_Language.NotificacionesEspañol.EncabezadoConexion1, MessageBoxButtons.OK,
+             MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                MessageBox.Show(Resources_Language.NotificacionesIngles.MensajeConexion1,
+             Resources_Language.NotificacionesIngles.EncabezadoConexion1, MessageBoxButtons.OK,
+             MessageBoxIcon.Information);
             }
             
+
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
@@ -212,6 +240,11 @@ namespace BusinessControl
         }
 
         private void PanelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblFecha_Click(object sender, EventArgs e)
         {
 
         }
