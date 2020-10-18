@@ -70,6 +70,15 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Advertencia.
+        /// </summary>
+        internal static string Encabezado2 {
+            get {
+                return ResourceManager.GetString("Encabezado2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Proceso Completado.
         /// </summary>
         internal static string EncabezadoConexion1 {
@@ -102,6 +111,15 @@ namespace BusinessControl.Resources_Language {
         internal static string Mensaje1 {
             get {
                 return ResourceManager.GetString("Mensaje1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El usuario no puede ser ingresado.
+        /// </summary>
+        internal static string Mensaje2 {
+            get {
+                return ResourceManager.GetString("Mensaje2", resourceCulture);
             }
         }
         

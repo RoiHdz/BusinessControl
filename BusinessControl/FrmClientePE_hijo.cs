@@ -64,6 +64,7 @@ namespace BusinessControl
 
         private void FrmClientePE_hijo_Load(object sender, EventArgs e)
         {
+            verificacionIdioma();
             try
             {
                 CmbEstado.DataSource = MainController.Cargar_Estado();
@@ -88,13 +89,14 @@ namespace BusinessControl
             agregar.direccion = txtDireccion.Text;
             agregar.FechaNacimiento = dtpFechaNacimiento.Text;
             agregar.Estado = Convert.ToInt16(CmbEstado.SelectedValue);
-            if (agregar.EnviarDatos_Controlle() == false)
+            if (agregar.EnviarDatos_Controlle() == false )
             {
-                MessageBox.Show("El usuario no puedo ser ingresado", "Advertencia", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Warning);
+                MessageBox.Show(Resources_Language.NotificacionesEspañol.Mensaje2, Resources_Language.NotificacionesEspañol.Encabezado2, MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Warning);
             }
             else
             {
                 LimpiarCampos();
+               
             }
         }
 
@@ -120,6 +122,28 @@ namespace BusinessControl
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        void verificacionIdioma()
+        {
+            if (MainController.idioma == 1)
+            {
+
+            }
+            else
+            {
+                lblPrimerNombre.Text = Resources_Language.ingles.lblPrimerNombre;
+                lblSegundoNombre.Text = Resources_Language.ingles.lblSegundoNombre;
+                lblPrimerApellido.Text = Resources_Language.ingles.lblPrimerApellido;
+                lblSegundoApellido.Text = Resources_Language.ingles.lblSegundoApellido;
+                lblNacimiento.Text = Resources_Language.ingles.lblNacimiento;
+                lblDUI.Text = Resources_Language.ingles.lblDUI;
+                lblDireccion.Text = Resources_Language.ingles.lblDireccion;
+                lblCorreo.Text = Resources_Language.ingles.lblCorreo;
+                lblTelefono.Text = Resources_Language.ingles.lblTelefono;
+                label4.Text = Resources_Language.ingles.label4;
+                btnActualizar.Text = Resources_Language.ingles.btnActualizar;
+                btnAgregaar.Text = Resources_Language.ingles.btnAgregaar;
+            }
         }
 
         private void dtpFechaNacimiento_ValueChanged(object sender, EventArgs e)

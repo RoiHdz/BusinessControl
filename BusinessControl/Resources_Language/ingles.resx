@@ -187,7 +187,7 @@
     <value>State</value>
   </data>
   <data name="lblApellido" xml:space="preserve">
-    <value>Suname</value>
+    <value>Surname</value>
   </data>
   <data name="lblContraseña" xml:space="preserve">
     <value>Password</value>
@@ -206,5 +206,44 @@
   </data>
   <data name="lblUsuario" xml:space="preserve">
     <value>User</value>
+  </data>
+  <data name="btnAgregaar" xml:space="preserve">
+    <value>Aggregate</value>
+  </data>
+  <data name="btnPrimerUso" xml:space="preserve">
+    <value>First Use</value>
+  </data>
+  <data name="lblDUI" xml:space="preserve">
+    <value>DNI</value>
+  </data>
+  <data name="lblNacimiento" xml:space="preserve">
+    <value>Birth Date</value>
+  </data>
+  <data name="lblNitEmpresa" xml:space="preserve">
+    <value>TIN</value>
+  </data>
+  <data name="lblPrimerApellido" xml:space="preserve">
+    <value>First Surname</value>
+  </data>
+  <data name="lblPrimerNombre" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="lblRepresentante" xml:space="preserve">
+    <value>Legal Representative</value>
+  </data>
+  <data name="lblSegundoApellido" xml:space="preserve">
+    <value>Second Surname</value>
+  </data>
+  <data name="lblSegundoNombre" xml:space="preserve">
+    <value>Second Name</value>
+  </data>
+  <data name="lblTelefono" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="lblTipoEmpresa" xml:space="preserve">
+    <value>Company Type</value>
+  </data>
+  <data name="lblDescripcion" xml:space="preserve">
+    <value>Description</value>
   </data>
 </root>

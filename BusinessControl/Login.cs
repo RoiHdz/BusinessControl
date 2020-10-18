@@ -108,13 +108,14 @@ namespace BusinessControl
             }
             else
             {
-                MessageBox.Show("El usuario o la contrasena que ingresaste no coinciden con ninguna cuenta.",
-                    "Error al iniciaer sensiom", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El usuario o la contraseña que ingresaste no coinciden con ninguna cuenta.",
+                    "Error al iniciar sesion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         void VerficarPrimerUso()
         {
+            
             bool valor = LoginController.VerificarPrimerUso_Controller();
             if (valor == true)
             {
@@ -165,6 +166,7 @@ namespace BusinessControl
             label1.Text = Resources_Language .español.label1;
             btnAcceder.Text = Resources_Language.español.btnAcceder;
             linkLabel1.Text = Resources_Language.español.linkLabel1;
+            btnPrimerUso.Text = Resources_Language.español.btnPrimerUso;
         }
 
         private void RdEnglish_CheckedChanged(object sender, EventArgs e)
@@ -175,7 +177,9 @@ namespace BusinessControl
             label1.Text = Resources_Language.ingles.label1;
             btnAcceder.Text = Resources_Language.ingles.btnAcceder;
             linkLabel1.Text = Resources_Language.ingles.linkLabel1;
-
+            btnPrimerUso.Text = Resources_Language.ingles.btnPrimerUso;
         }
+
     }
+
 }

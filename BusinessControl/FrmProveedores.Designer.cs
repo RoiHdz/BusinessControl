@@ -33,13 +33,13 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtPrimerNombre = new System.Windows.Forms.TextBox();
-            this.lblNIF = new System.Windows.Forms.Label();
+            this.lblNIT = new System.Windows.Forms.Label();
             this.lblCorreo = new System.Windows.Forms.Label();
             this.txtCorreoProveedor = new System.Windows.Forms.TextBox();
             this.lblDireccion = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.lblEstado = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTelefono = new System.Windows.Forms.Label();
             this.txtDui = new System.Windows.Forms.MaskedTextBox();
             this.txtTelefono1 = new System.Windows.Forms.MaskedTextBox();
             this.lblDescripcion = new System.Windows.Forms.Label();
@@ -106,17 +106,17 @@
             this.txtPrimerNombre.Size = new System.Drawing.Size(208, 21);
             this.txtPrimerNombre.TabIndex = 6;
             // 
-            // lblNIF
+            // lblNIT
             // 
-            this.lblNIF.AutoSize = true;
-            this.lblNIF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lblNIF.ForeColor = System.Drawing.Color.White;
-            this.lblNIF.Location = new System.Drawing.Point(32, 47);
-            this.lblNIF.Name = "lblNIF";
-            this.lblNIF.Size = new System.Drawing.Size(32, 16);
-            this.lblNIF.TabIndex = 7;
-            this.lblNIF.Text = "NIF:";
-            this.lblNIF.Click += new System.EventHandler(this.lblNIF_Click);
+            this.lblNIT.AutoSize = true;
+            this.lblNIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.lblNIT.ForeColor = System.Drawing.Color.White;
+            this.lblNIT.Location = new System.Drawing.Point(32, 47);
+            this.lblNIT.Name = "lblNIT";
+            this.lblNIT.Size = new System.Drawing.Size(33, 16);
+            this.lblNIT.TabIndex = 7;
+            this.lblNIT.Text = "NIT:";
+            this.lblNIT.Click += new System.EventHandler(this.lblNIF_Click);
             // 
             // lblCorreo
             // 
@@ -167,17 +167,17 @@
             this.lblEstado.TabIndex = 13;
             this.lblEstado.Text = "Estado:";
             // 
-            // label1
+            // lblTelefono
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(32, 168);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 16);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Telefono:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.lblTelefono.ForeColor = System.Drawing.Color.White;
+            this.lblTelefono.Location = new System.Drawing.Point(32, 168);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(65, 16);
+            this.lblTelefono.TabIndex = 15;
+            this.lblTelefono.Text = "Telefono:";
+            this.lblTelefono.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtDui
             // 
@@ -283,13 +283,13 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.txtTelefono1);
             this.Controls.Add(this.txtDui);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.lblDireccion);
             this.Controls.Add(this.txtCorreoProveedor);
             this.Controls.Add(this.lblCorreo);
-            this.Controls.Add(this.lblNIF);
+            this.Controls.Add(this.lblNIT);
             this.Controls.Add(this.txtPrimerNombre);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.MenuSuperior);
@@ -317,13 +317,13 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.Label lblNombre;
         public System.Windows.Forms.TextBox txtPrimerNombre;
-        private System.Windows.Forms.Label lblNIF;
+        private System.Windows.Forms.Label lblNIT;
         private System.Windows.Forms.Label lblCorreo;
         public System.Windows.Forms.TextBox txtCorreoProveedor;
         private System.Windows.Forms.Label lblDireccion;
         public System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label lblEstado;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTelefono;
         public System.Windows.Forms.MaskedTextBox txtDui;
         public System.Windows.Forms.MaskedTextBox txtTelefono1;
         private System.Windows.Forms.Label lblDescripcion;

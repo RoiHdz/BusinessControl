@@ -45,13 +45,14 @@ namespace BusinessControl
             agregar.Representante = txtRepresentante.Text;
             agregar.Direccion = txtDireccionEmpresa.Text;
             agregar.TipoEmpresa = Convert.ToInt16(cmbTipoEmpresa.SelectedValue);
-            if (agregar.EnviarDatos_Controlleer() == false)
+            if (agregar.EnviarDatos_Controlleer() == false )
             {
-                MessageBox.Show("El usuario no puedo ser ingresado", "Advertencia", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Warning);
+                MessageBox.Show(Resources_Language.NotificacionesEspañol.Mensaje2, Resources_Language.NotificacionesEspañol.Encabezado2, MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Warning);
             }
             else
             {
                 LimpiarCampos();
+                
             }
         }
 
@@ -84,6 +85,8 @@ namespace BusinessControl
 
         private void FrmPrimerUso_Load(object sender, EventArgs e)
         {
+            verificacionIdioma();
+
             try
             {
                 cmbTipoEmpresa.DataSource = PrimerUsoController.Cargar_TipoEmpresa();
@@ -95,6 +98,29 @@ namespace BusinessControl
                 throw;
             }
 
+        }
+        void verificacionIdioma()
+        {
+            if (MainController.idioma == 1)
+            {
+                lblNombreEmpresa.Text = Resources_Language.español.lblNombreEmpresa;
+                lblCorreoEmpresa.Text = Resources_Language.español.lblCorreoEmpresa;
+                lblNitEmpresa.Text = Resources_Language.español.lblNitEmpresa;
+                lblRepresentante.Text = Resources_Language.español.lblRepresentante;
+                lblTipoEmpresa.Text = Resources_Language.español.lblTipoEmpresa;
+                lblDireccionEmpresa.Text = Resources_Language.español.lblDireccionEmpresa;
+                btnAgregarEmpresa.Text = Resources_Language.español.btnAgregarEmpresa;
+            }
+            else
+            {
+                lblNombreEmpresa.Text = Resources_Language.ingles.lblNombreEmpresa;
+                lblCorreoEmpresa.Text = Resources_Language.ingles.lblCorreo;
+                lblNitEmpresa.Text = Resources_Language.ingles.lblNitEmpresa;
+                lblRepresentante.Text = Resources_Language.ingles.lblRepresentante;
+                lblTipoEmpresa.Text = Resources_Language.ingles.lblTipoEmpresa;
+                lblDireccionEmpresa.Text = Resources_Language.ingles.lblDireccion;
+                btnAgregarEmpresa.Text = Resources_Language.ingles.btnAgregaar;
+            }
         }
     }
 }

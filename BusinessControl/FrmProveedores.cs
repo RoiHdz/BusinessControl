@@ -128,6 +128,7 @@ namespace BusinessControl
 
         private void FrmProveedores_Load_1(object sender, EventArgs e)
         {
+            verificacionIdioma();
             try
             {
                 cmbEstado.DataSource = ProveedoresController.Cargar_Estado();
@@ -137,6 +138,25 @@ namespace BusinessControl
             catch (Exception)
             {
                 throw;
+            }
+        }
+        void verificacionIdioma()
+        {
+            if (MainController.idioma == 1)
+            {
+
+            }
+            else
+            {
+                lblNombre.Text = Resources_Language.ingles.lblNombre;
+                lblDescripcion.Text = Resources_Language.ingles.lblDescripcion;
+                lblNIT.Text = Resources_Language.ingles.lblNitEmpresa;
+                lblDireccion.Text = Resources_Language.ingles.lblDireccion;
+                lblCorreo.Text = Resources_Language.ingles.lblCorreo;
+                lblTelefono.Text = Resources_Language.ingles.lblTelefono;
+                lblEstado.Text = Resources_Language.ingles.label4;
+                btnActualizar.Text = Resources_Language.ingles.btnActualizar;
+                btnAgregar.Text = Resources_Language.ingles.btnAgregaar;
             }
         }
     }

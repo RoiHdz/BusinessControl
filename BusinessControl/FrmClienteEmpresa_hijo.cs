@@ -89,7 +89,7 @@ namespace BusinessControl
                 lblCorreo.Text = Resources_Language.ingles.lblCorreo;
                 label4.Text = Resources_Language.ingles.label4;
                 btnActualizar.Text = Resources_Language.ingles.btnActualizar;
-                btnAgregar.Text = Resources_Language.ingles.btnAdministrar;
+                btnAgregaar.Text = Resources_Language.ingles.btnAgregaar;
             }
         }
     }

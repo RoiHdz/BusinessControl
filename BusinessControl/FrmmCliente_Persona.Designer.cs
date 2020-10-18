@@ -30,7 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.DgvClientes_Persona = new System.Windows.Forms.DataGridView();
@@ -46,14 +46,14 @@
             this.button4.Text = "Buscar Cliente";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnEliminar
             // 
-            this.button3.Location = new System.Drawing.Point(716, 113);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(179, 37);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Eliminar Cliente";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEliminar.Location = new System.Drawing.Point(716, 113);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(179, 37);
+            this.btnEliminar.TabIndex = 13;
+            this.btnEliminar.Text = "Eliminar Cliente";
+            this.btnEliminar.UseVisualStyleBackColor = true;
             // 
             // btnEditar
             // 
@@ -100,7 +100,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(937, 549);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.DgvClientes_Persona);
@@ -116,7 +116,7 @@
         #endregion
 
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnAgregar;
         public System.Windows.Forms.DataGridView DgvClientes_Persona;

@@ -88,6 +88,15 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Aggregate.
+        /// </summary>
+        internal static string btnAgregaar {
+            get {
+                return ResourceManager.GetString("btnAgregaar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Add Client.
         /// </summary>
         internal static string btnagregar {
@@ -178,6 +187,15 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a First Use.
+        /// </summary>
+        internal static string btnPrimerUso {
+            get {
+                return ResourceManager.GetString("btnPrimerUso", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Provider.
         /// </summary>
         internal static string BtnProveedor {
@@ -241,7 +259,7 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Suname.
+        ///   Busca una cadena traducida similar a Surname.
         /// </summary>
         internal static string lblApellido {
             get {
@@ -268,11 +286,47 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Description.
+        /// </summary>
+        internal static string lblDescripcion {
+            get {
+                return ResourceManager.GetString("lblDescripcion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Direction.
         /// </summary>
         internal static string lblDireccion {
             get {
                 return ResourceManager.GetString("lblDireccion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a DNI.
+        /// </summary>
+        internal static string lblDUI {
+            get {
+                return ResourceManager.GetString("lblDUI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Birth Date.
+        /// </summary>
+        internal static string lblNacimiento {
+            get {
+                return ResourceManager.GetString("lblNacimiento", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a TIN.
+        /// </summary>
+        internal static string lblNitEmpresa {
+            get {
+                return ResourceManager.GetString("lblNitEmpresa", resourceCulture);
             }
         }
         
@@ -291,6 +345,69 @@ namespace BusinessControl.Resources_Language {
         internal static string lblNombreEmpresa {
             get {
                 return ResourceManager.GetString("lblNombreEmpresa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a First Surname.
+        /// </summary>
+        internal static string lblPrimerApellido {
+            get {
+                return ResourceManager.GetString("lblPrimerApellido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a First Name.
+        /// </summary>
+        internal static string lblPrimerNombre {
+            get {
+                return ResourceManager.GetString("lblPrimerNombre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Legal Representative.
+        /// </summary>
+        internal static string lblRepresentante {
+            get {
+                return ResourceManager.GetString("lblRepresentante", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Second Surname.
+        /// </summary>
+        internal static string lblSegundoApellido {
+            get {
+                return ResourceManager.GetString("lblSegundoApellido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Second Name.
+        /// </summary>
+        internal static string lblSegundoNombre {
+            get {
+                return ResourceManager.GetString("lblSegundoNombre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Telephone.
+        /// </summary>
+        internal static string lblTelefono {
+            get {
+                return ResourceManager.GetString("lblTelefono", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Company Type.
+        /// </summary>
+        internal static string lblTipoEmpresa {
+            get {
+                return ResourceManager.GetString("lblTipoEmpresa", resourceCulture);
             }
         }
         

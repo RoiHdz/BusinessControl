@@ -37,7 +37,7 @@ namespace BusinessControl
 
         private void FrmProveedor_Load(object sender, EventArgs e)
         {
-
+            verificacionIdioma();
             try
             {
                 DgvClientes.DataSource = ProveedoresController.Cargar_Proveedor();
@@ -45,6 +45,20 @@ namespace BusinessControl
             catch (Exception)
             {
                 MessageBox.Show("Error al capturar datos");
+            }
+        }
+        void verificacionIdioma()
+        {
+            if (MainController.idioma == 1)
+            {
+
+            }
+            else
+            {
+                btnAgregar.Text = Resources_Language.ingles.btnagregar;
+                btnEditar.Text = Resources_Language.ingles.btnModificar;
+                button3.Text = Resources_Language.ingles.btnEliminar;
+                button4.Text = Resources_Language.ingles.button4;
             }
         }
     }

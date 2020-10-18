@@ -70,6 +70,15 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Agregar.
+        /// </summary>
+        internal static string btnAgregarEmpresa {
+            get {
+                return ResourceManager.GetString("btnAgregarEmpresa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Clientes.
         /// </summary>
         internal static string BtnCliente {
@@ -97,6 +106,15 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Primer Uso.
+        /// </summary>
+        internal static string btnPrimerUso {
+            get {
+                return ResourceManager.GetString("btnPrimerUso", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a .
         /// </summary>
         internal static string BtnProveedor {
@@ -120,6 +138,60 @@ namespace BusinessControl.Resources_Language {
         internal static string label1 {
             get {
                 return ResourceManager.GetString("label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Correo.
+        /// </summary>
+        internal static string lblCorreoEmpresa {
+            get {
+                return ResourceManager.GetString("lblCorreoEmpresa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Direccion.
+        /// </summary>
+        internal static string lblDireccionEmpresa {
+            get {
+                return ResourceManager.GetString("lblDireccionEmpresa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a NIT.
+        /// </summary>
+        internal static string lblNitEmpresa {
+            get {
+                return ResourceManager.GetString("lblNitEmpresa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nombre Empresa.
+        /// </summary>
+        internal static string lblNombreEmpresa {
+            get {
+                return ResourceManager.GetString("lblNombreEmpresa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Representante legal.
+        /// </summary>
+        internal static string lblRepresentante {
+            get {
+                return ResourceManager.GetString("lblRepresentante", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Tipo Empresa.
+        /// </summary>
+        internal static string lblTipoEmpresa {
+            get {
+                return ResourceManager.GetString("lblTipoEmpresa", resourceCulture);
             }
         }
         

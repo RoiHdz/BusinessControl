@@ -32,6 +32,7 @@ namespace BusinessControl
 
         private void FrmmClientes_Load(object sender, EventArgs e)
         {
+            verificacionIdioma();
             try
             {
                 DgvClientes_Persona.DataSource = MainController.Cargar_Cliente();
@@ -45,6 +46,21 @@ namespace BusinessControl
         private void DgvClientes_Persona_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        void verificacionIdioma()
+        {
+            if (MainController.idioma == 1)
+            {
+
+            }
+            else
+            {
+                btnAgregar.Text = Resources_Language.ingles.btnagregar;
+                btnEditar.Text = Resources_Language.ingles.btnModificar;
+                btnEliminar.Text = Resources_Language.ingles.btnEliminar;
+                button4.Text = Resources_Language.ingles.button4;
+            }
         }
     }
 }

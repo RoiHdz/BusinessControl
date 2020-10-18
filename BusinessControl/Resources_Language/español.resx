@@ -147,4 +147,28 @@
   <data name="txtUsuario" xml:space="preserve">
     <value>USUARIO</value>
   </data>
+  <data name="btnAgregarEmpresa" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="btnPrimerUso" xml:space="preserve">
+    <value>Primer Uso</value>
+  </data>
+  <data name="lblCorreoEmpresa" xml:space="preserve">
+    <value>Correo</value>
+  </data>
+  <data name="lblDireccionEmpresa" xml:space="preserve">
+    <value>Direccion</value>
+  </data>
+  <data name="lblNitEmpresa" xml:space="preserve">
+    <value>NIT</value>
+  </data>
+  <data name="lblNombreEmpresa" xml:space="preserve">
+    <value>Nombre Empresa</value>
+  </data>
+  <data name="lblRepresentante" xml:space="preserve">
+    <value>Representante legal</value>
+  </data>
+  <data name="lblTipoEmpresa" xml:space="preserve">
+    <value>Tipo Empresa</value>
+  </data>
 </root>
