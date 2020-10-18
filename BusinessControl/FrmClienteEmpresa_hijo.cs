@@ -17,7 +17,7 @@ namespace BusinessControl
         public FrmClienteEmpresa_hijo()
         {
             InitializeComponent();
-  
+
         }
         void EnvioDatos()
         {
@@ -54,6 +54,7 @@ namespace BusinessControl
 
         private void FrmClienteEmpresa_hijo_Load_1(object sender, EventArgs e)
         {
+            verificacionIdioma();
             try
             {
                 cmbEstado.DataSource = ClienteEmpresaController.Cargar_Estado();
@@ -69,6 +70,27 @@ namespace BusinessControl
         private void BtnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void lblNombreEmpresa_Click(object sender, EventArgs e)
+        {
+
+        }
+        void verificacionIdioma()
+        {
+            if (MainController.idioma == 1)
+            {
+
+            }
+            else
+            {
+                lblNombreEmpresa.Text = Resources_Language.ingles.lblNombreEmpresa;
+                lblDireccion.Text = Resources_Language.ingles.lblDireccion;
+                lblCorreo.Text = Resources_Language.ingles.lblCorreo;
+                label4.Text = Resources_Language.ingles.label4;
+                btnActualizar.Text = Resources_Language.ingles.btnActualizar;
+                btnAgregar.Text = Resources_Language.ingles.btnAdministrar;
+            }
         }
     }
 }

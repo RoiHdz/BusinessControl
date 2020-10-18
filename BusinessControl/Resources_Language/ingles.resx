@@ -177,4 +177,19 @@
   <data name="button4" xml:space="preserve">
     <value>Find Client</value>
   </data>
+  <data name="btnActualizar" xml:space="preserve">
+    <value>To update</value>
+  </data>
+  <data name="label4" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="lblCorreo" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="lblDireccion" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="lblNombreEmpresa" xml:space="preserve">
+    <value>Company name</value>
+  </data>
 </root>

@@ -80,5 +80,10 @@ namespace BusinessControl
         {
 
         }
+
+        private void lblUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

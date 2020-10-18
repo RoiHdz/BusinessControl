@@ -70,6 +70,15 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a To update.
+        /// </summary>
+        internal static string btnActualizar {
+            get {
+                return ResourceManager.GetString("btnActualizar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Manage.
         /// </summary>
         internal static string btnAdministrar {
@@ -210,6 +219,42 @@ namespace BusinessControl.Resources_Language {
         internal static string label1 {
             get {
                 return ResourceManager.GetString("label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a State.
+        /// </summary>
+        internal static string label4 {
+            get {
+                return ResourceManager.GetString("label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Mail.
+        /// </summary>
+        internal static string lblCorreo {
+            get {
+                return ResourceManager.GetString("lblCorreo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Direction.
+        /// </summary>
+        internal static string lblDireccion {
+            get {
+                return ResourceManager.GetString("lblDireccion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Company name.
+        /// </summary>
+        internal static string lblNombreEmpresa {
+            get {
+                return ResourceManager.GetString("lblNombreEmpresa", resourceCulture);
             }
         }
         
