@@ -56,12 +56,13 @@
             // 
             // MenuSuperior
             // 
+            this.MenuSuperior.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.MenuSuperior.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripLabel1});
             this.MenuSuperior.Location = new System.Drawing.Point(0, 0);
             this.MenuSuperior.Name = "MenuSuperior";
-            this.MenuSuperior.Size = new System.Drawing.Size(752, 25);
+            this.MenuSuperior.Size = new System.Drawing.Size(752, 27);
             this.MenuSuperior.TabIndex = 1;
             this.MenuSuperior.Text = "toolStrip1";
             // 
@@ -72,7 +73,7 @@
             this.toolStripButton1.Image = global::BusinessControl.Properties.Resources.close_button;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton1.Text = "Salir";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -80,7 +81,7 @@
             // 
             this.toolStripLabel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(138, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(175, 24);
             this.toolStripLabel1.Text = "Formulario de materiales";
             // 
             // lblNombreMaterial
@@ -90,7 +91,7 @@
             this.lblNombreMaterial.ForeColor = System.Drawing.Color.White;
             this.lblNombreMaterial.Location = new System.Drawing.Point(9, 44);
             this.lblNombreMaterial.Name = "lblNombreMaterial";
-            this.lblNombreMaterial.Size = new System.Drawing.Size(133, 16);
+            this.lblNombreMaterial.Size = new System.Drawing.Size(165, 20);
             this.lblNombreMaterial.TabIndex = 6;
             this.lblNombreMaterial.Text = "Nombre del material:";
             // 
@@ -99,8 +100,9 @@
             this.txtNombreMaterial.Location = new System.Drawing.Point(12, 64);
             this.txtNombreMaterial.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombreMaterial.Name = "txtNombreMaterial";
-            this.txtNombreMaterial.Size = new System.Drawing.Size(229, 21);
+            this.txtNombreMaterial.Size = new System.Drawing.Size(229, 24);
             this.txtNombreMaterial.TabIndex = 7;
+            this.txtNombreMaterial.TextChanged += new System.EventHandler(this.txtNombreMaterial_TextChanged);
             // 
             // lblCodigoMaterial
             // 
@@ -109,7 +111,7 @@
             this.lblCodigoMaterial.ForeColor = System.Drawing.Color.White;
             this.lblCodigoMaterial.Location = new System.Drawing.Point(253, 44);
             this.lblCodigoMaterial.Name = "lblCodigoMaterial";
-            this.lblCodigoMaterial.Size = new System.Drawing.Size(128, 16);
+            this.lblCodigoMaterial.Size = new System.Drawing.Size(158, 20);
             this.lblCodigoMaterial.TabIndex = 8;
             this.lblCodigoMaterial.Text = "Codigo del material:";
             // 
@@ -120,7 +122,7 @@
             this.lblPrecioUnitario.ForeColor = System.Drawing.Color.White;
             this.lblPrecioUnitario.Location = new System.Drawing.Point(508, 44);
             this.lblPrecioUnitario.Name = "lblPrecioUnitario";
-            this.lblPrecioUnitario.Size = new System.Drawing.Size(96, 16);
+            this.lblPrecioUnitario.Size = new System.Drawing.Size(122, 20);
             this.lblPrecioUnitario.TabIndex = 9;
             this.lblPrecioUnitario.Text = "Precio unitario:";
             // 
@@ -129,7 +131,7 @@
             this.txtCodigoMaterial.Location = new System.Drawing.Point(256, 64);
             this.txtCodigoMaterial.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCodigoMaterial.Name = "txtCodigoMaterial";
-            this.txtCodigoMaterial.Size = new System.Drawing.Size(229, 21);
+            this.txtCodigoMaterial.Size = new System.Drawing.Size(229, 24);
             this.txtCodigoMaterial.TabIndex = 10;
             // 
             // txtPrecioUnitario
@@ -137,7 +139,7 @@
             this.txtPrecioUnitario.Location = new System.Drawing.Point(511, 64);
             this.txtPrecioUnitario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPrecioUnitario.Name = "txtPrecioUnitario";
-            this.txtPrecioUnitario.Size = new System.Drawing.Size(229, 21);
+            this.txtPrecioUnitario.Size = new System.Drawing.Size(229, 24);
             this.txtPrecioUnitario.TabIndex = 11;
             // 
             // lblDescripcionMaterial
@@ -147,7 +149,7 @@
             this.lblDescripcionMaterial.ForeColor = System.Drawing.Color.White;
             this.lblDescripcionMaterial.Location = new System.Drawing.Point(508, 162);
             this.lblDescripcionMaterial.Name = "lblDescripcionMaterial";
-            this.lblDescripcionMaterial.Size = new System.Drawing.Size(83, 16);
+            this.lblDescripcionMaterial.Size = new System.Drawing.Size(104, 20);
             this.lblDescripcionMaterial.TabIndex = 12;
             this.lblDescripcionMaterial.Text = "Descripcion:";
             this.lblDescripcionMaterial.Click += new System.EventHandler(this.lblDescripcionMaterial_Click);
@@ -168,7 +170,7 @@
             this.lblMarcaMaterial.ForeColor = System.Drawing.Color.White;
             this.lblMarcaMaterial.Location = new System.Drawing.Point(12, 100);
             this.lblMarcaMaterial.Name = "lblMarcaMaterial";
-            this.lblMarcaMaterial.Size = new System.Drawing.Size(49, 16);
+            this.lblMarcaMaterial.Size = new System.Drawing.Size(61, 20);
             this.lblMarcaMaterial.TabIndex = 14;
             this.lblMarcaMaterial.Text = "Marca:";
             // 
@@ -179,7 +181,7 @@
             this.lblidProveedor.ForeColor = System.Drawing.Color.White;
             this.lblidProveedor.Location = new System.Drawing.Point(253, 100);
             this.lblidProveedor.Name = "lblidProveedor";
-            this.lblidProveedor.Size = new System.Drawing.Size(75, 16);
+            this.lblidProveedor.Size = new System.Drawing.Size(90, 20);
             this.lblidProveedor.TabIndex = 15;
             this.lblidProveedor.Text = "Proveedor:";
             // 
@@ -188,7 +190,7 @@
             this.txtMarcaMaterial.Location = new System.Drawing.Point(12, 120);
             this.txtMarcaMaterial.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMarcaMaterial.Name = "txtMarcaMaterial";
-            this.txtMarcaMaterial.Size = new System.Drawing.Size(229, 21);
+            this.txtMarcaMaterial.Size = new System.Drawing.Size(229, 24);
             this.txtMarcaMaterial.TabIndex = 16;
             // 
             // lblCategoria
@@ -198,7 +200,7 @@
             this.lblCategoria.ForeColor = System.Drawing.Color.White;
             this.lblCategoria.Location = new System.Drawing.Point(508, 100);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(70, 16);
+            this.lblCategoria.Size = new System.Drawing.Size(86, 20);
             this.lblCategoria.TabIndex = 18;
             this.lblCategoria.Text = "Categoria:";
             // 
@@ -209,7 +211,7 @@
             this.lblEstado.ForeColor = System.Drawing.Color.White;
             this.lblEstado.Location = new System.Drawing.Point(12, 162);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(54, 16);
+            this.lblEstado.Size = new System.Drawing.Size(66, 20);
             this.lblEstado.TabIndex = 19;
             this.lblEstado.Text = "Estado:";
             // 
@@ -237,7 +239,7 @@
             this.cmbCategoria.FormattingEnabled = true;
             this.cmbCategoria.Location = new System.Drawing.Point(511, 119);
             this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(229, 24);
+            this.cmbCategoria.Size = new System.Drawing.Size(229, 27);
             this.cmbCategoria.TabIndex = 36;
             // 
             // cmbEstadoMaterial
@@ -245,7 +247,7 @@
             this.cmbEstadoMaterial.FormattingEnabled = true;
             this.cmbEstadoMaterial.Location = new System.Drawing.Point(12, 181);
             this.cmbEstadoMaterial.Name = "cmbEstadoMaterial";
-            this.cmbEstadoMaterial.Size = new System.Drawing.Size(229, 24);
+            this.cmbEstadoMaterial.Size = new System.Drawing.Size(229, 27);
             this.cmbEstadoMaterial.TabIndex = 37;
             // 
             // cmbProveedor
@@ -253,7 +255,7 @@
             this.cmbProveedor.FormattingEnabled = true;
             this.cmbProveedor.Location = new System.Drawing.Point(256, 120);
             this.cmbProveedor.Name = "cmbProveedor";
-            this.cmbProveedor.Size = new System.Drawing.Size(229, 24);
+            this.cmbProveedor.Size = new System.Drawing.Size(229, 27);
             this.cmbProveedor.TabIndex = 38;
             // 
             // dtpIngreso
@@ -262,7 +264,7 @@
             this.dtpIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpIngreso.Location = new System.Drawing.Point(256, 184);
             this.dtpIngreso.Name = "dtpIngreso";
-            this.dtpIngreso.Size = new System.Drawing.Size(229, 21);
+            this.dtpIngreso.Size = new System.Drawing.Size(229, 24);
             this.dtpIngreso.TabIndex = 39;
             // 
             // label1
@@ -272,13 +274,13 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(253, 165);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 16);
+            this.label1.Size = new System.Drawing.Size(143, 20);
             this.label1.TabIndex = 40;
             this.label1.Text = "Fecha de ingreso:";
             // 
             // FrmMaterial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(752, 297);

@@ -250,6 +250,15 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Date of admission.
+        /// </summary>
+        internal static string label1FechaIngreso {
+            get {
+                return ResourceManager.GetString("label1FechaIngreso", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a State.
         /// </summary>
         internal static string label4 {
@@ -264,6 +273,24 @@ namespace BusinessControl.Resources_Language {
         internal static string lblApellido {
             get {
                 return ResourceManager.GetString("lblApellido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Category.
+        /// </summary>
+        internal static string lblCategoria {
+            get {
+                return ResourceManager.GetString("lblCategoria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Material code.
+        /// </summary>
+        internal static string lblCodigoMaterial {
+            get {
+                return ResourceManager.GetString("lblCodigoMaterial", resourceCulture);
             }
         }
         
@@ -295,6 +322,15 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Description.
+        /// </summary>
+        internal static string lblDescripcionMaterial {
+            get {
+                return ResourceManager.GetString("lblDescripcionMaterial", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Direction.
         /// </summary>
         internal static string lblDireccion {
@@ -309,6 +345,34 @@ namespace BusinessControl.Resources_Language {
         internal static string lblDUI {
             get {
                 return ResourceManager.GetString("lblDUI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a state
+        ///State.
+        /// </summary>
+        internal static string lblEstado {
+            get {
+                return ResourceManager.GetString("lblEstado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Provider.
+        /// </summary>
+        internal static string lblidProveedor {
+            get {
+                return ResourceManager.GetString("lblidProveedor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Brand.
+        /// </summary>
+        internal static string lblMarcaMaterial {
+            get {
+                return ResourceManager.GetString("lblMarcaMaterial", resourceCulture);
             }
         }
         
@@ -345,6 +409,24 @@ namespace BusinessControl.Resources_Language {
         internal static string lblNombreEmpresa {
             get {
                 return ResourceManager.GetString("lblNombreEmpresa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Material name.
+        /// </summary>
+        internal static string lblNombreMaterial {
+            get {
+                return ResourceManager.GetString("lblNombreMaterial", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Unit Price.
+        /// </summary>
+        internal static string lblPrecioUnitario {
+            get {
+                return ResourceManager.GetString("lblPrecioUnitario", resourceCulture);
             }
         }
         
@@ -426,6 +508,15 @@ namespace BusinessControl.Resources_Language {
         internal static string linkLabel1 {
             get {
                 return ResourceManager.GetString("linkLabel1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Material form.
+        /// </summary>
+        internal static string toolStripLabe1 {
+            get {
+                return ResourceManager.GetString("toolStripLabe1", resourceCulture);
             }
         }
         

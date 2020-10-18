@@ -65,6 +65,7 @@ namespace BusinessControl
 
         private void FrmMaterial_Load(object sender, EventArgs e)
         {
+            verificacionIdioma();
             try
             {
                 cmbEstadoMaterial.DataSource = MaterialesController.Cargar_Estado();
@@ -83,6 +84,33 @@ namespace BusinessControl
             {
 
                 throw;
+            }
+        }
+
+        private void txtNombreMaterial_TextChanged(object sender, EventArgs e)
+        {
+        }
+        void verificacionIdioma()
+        {
+            if (MainController.idioma == 1)
+            {
+
+            }
+            else
+            {
+                lblNombreMaterial.Text = Resources_Language.ingles.lblNombreMaterial;
+                lblCodigoMaterial.Text = Resources_Language.ingles.lblCodigoMaterial;
+                lblPrecioUnitario.Text = Resources_Language.ingles.lblPrecioUnitario;
+                lblidProveedor.Text = Resources_Language.ingles.lblidProveedor;
+                lblCategoria.Text = Resources_Language.ingles.lblCategoria;
+                lblEstado.Text = Resources_Language.ingles.lblEstado;
+                label1.Text = Resources_Language.ingles.label1;
+                lblDescripcionMaterial.Text = Resources_Language.ingles.lblDescripcionMaterial;
+                toolStripButton1.Text = Resources_Language.ingles.toolStripLabe1;
+                btnAgregar.Text = Resources_Language.ingles.btnagregar;
+                button2.Text = Resources_Language.ingles.button4;
+                lblMarcaMaterial.Text = Resources_Language.ingles.lblMarcaMaterial;
+
             }
         }
     }

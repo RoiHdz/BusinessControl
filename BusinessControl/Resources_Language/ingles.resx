@@ -246,4 +246,35 @@
   <data name="lblDescripcion" xml:space="preserve">
     <value>Description</value>
   </data>
+  <data name="label1FechaIngreso" xml:space="preserve">
+    <value>Date of admission</value>
+  </data>
+  <data name="lblCategoria" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="lblCodigoMaterial" xml:space="preserve">
+    <value>Material code</value>
+  </data>
+  <data name="lblDescripcionMaterial" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lblEstado" xml:space="preserve">
+    <value>state
+State</value>
+  </data>
+  <data name="lblidProveedor" xml:space="preserve">
+    <value>Provider</value>
+  </data>
+  <data name="lblMarcaMaterial" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+  <data name="lblNombreMaterial" xml:space="preserve">
+    <value>Material name</value>
+  </data>
+  <data name="lblPrecioUnitario" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="toolStripLabe1" xml:space="preserve">
+    <value>Material form</value>
+  </data>
 </root>
