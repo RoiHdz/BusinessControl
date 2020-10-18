@@ -223,6 +223,33 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Add materials.
+        /// </summary>
+        internal static string button1 {
+            get {
+                return ResourceManager.GetString("button1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Modify materials.
+        /// </summary>
+        internal static string button2 {
+            get {
+                return ResourceManager.GetString("button2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Remove materials.
+        /// </summary>
+        internal static string button3 {
+            get {
+                return ResourceManager.GetString("button3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Find Client.
         /// </summary>
         internal static string button4 {
@@ -508,6 +535,15 @@ namespace BusinessControl.Resources_Language {
         internal static string linkLabel1 {
             get {
                 return ResourceManager.GetString("linkLabel1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Find materials.
+        /// </summary>
+        internal static string String1 {
+            get {
+                return ResourceManager.GetString("String1", resourceCulture);
             }
         }
         

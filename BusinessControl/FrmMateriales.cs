@@ -61,6 +61,7 @@ namespace BusinessControl
 
         private void FrmMateriales_Load(object sender, EventArgs e)
         {
+            verificacionIdioma();
             try
             {
                 DgvMateriales.DataSource = MaterialesController.Cargar_Materiales();
@@ -68,6 +69,24 @@ namespace BusinessControl
             catch (Exception)
             {
                 MessageBox.Show("Error al capturar datos");
+            }
+        }
+
+        private void DgvMateriales_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
+        void verificacionIdioma()
+        {
+            if (MainController.idioma == 1)
+            {
+
+            }
+            else
+            {
+                button1.Text = Resources_Language.ingles.button1;
+                button2.Text = Resources_Language.ingles.button2;
+                button3.Text = Resources_Language.ingles.button3;
+                button4.Text = Resources_Language.ingles.button4;
             }
         }
     }
