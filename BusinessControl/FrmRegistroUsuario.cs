@@ -59,6 +59,7 @@ namespace BusinessControl
 
         private void FrmRegistroUsuario_Load(object sender, EventArgs e)
         {
+            verificacionIdioma();
             try
             {
                 cmbIdTipoUsuario.DataSource = RegistroUsuarioController.Cargar_TipoUsuario();
@@ -83,7 +84,23 @@ namespace BusinessControl
 
         private void lblUsuario_Click(object sender, EventArgs e)
         {
+        }
+        void verificacionIdioma()
+        {
+            if (MainController.idioma == 1)
+            {
 
+            }
+            else
+            {
+                lblUsuario.Text = Resources_Language.ingles.lblUsuario;
+                lblNombre.Text = Resources_Language.ingles.lblNombre;
+                lblCorreo.Text = Resources_Language.ingles.lblCorreo;
+                lblContraseña.Text = Resources_Language.ingles.lblContraseña;
+                lblApellido.Text = Resources_Language.ingles.lblApellido;
+                lblIdTipoUsuario.Text = Resources_Language.ingles.IblIdTipoUsuario;
+                bntAgragar.Text = Resources_Language.ingles.btnagregar;
+            }
         }
     }
 }

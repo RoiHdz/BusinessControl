@@ -214,6 +214,15 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Use type id.
+        /// </summary>
+        internal static string IblIdTipoUsuario {
+            get {
+                return ResourceManager.GetString("IblIdTipoUsuario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a LOGIN.
         /// </summary>
         internal static string label1 {
@@ -228,6 +237,24 @@ namespace BusinessControl.Resources_Language {
         internal static string label4 {
             get {
                 return ResourceManager.GetString("label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Suname.
+        /// </summary>
+        internal static string lblApellido {
+            get {
+                return ResourceManager.GetString("lblApellido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Password.
+        /// </summary>
+        internal static string lblContraseña {
+            get {
+                return ResourceManager.GetString("lblContraseña", resourceCulture);
             }
         }
         
@@ -250,11 +277,29 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Name.
+        /// </summary>
+        internal static string lblNombre {
+            get {
+                return ResourceManager.GetString("lblNombre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Company name.
         /// </summary>
         internal static string lblNombreEmpresa {
             get {
                 return ResourceManager.GetString("lblNombreEmpresa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a User.
+        /// </summary>
+        internal static string lblUsuario {
+            get {
+                return ResourceManager.GetString("lblUsuario", resourceCulture);
             }
         }
         

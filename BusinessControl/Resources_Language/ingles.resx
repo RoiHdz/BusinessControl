@@ -180,8 +180,17 @@
   <data name="btnActualizar" xml:space="preserve">
     <value>To update</value>
   </data>
+  <data name="IblIdTipoUsuario" xml:space="preserve">
+    <value>Use type id</value>
+  </data>
   <data name="label4" xml:space="preserve">
     <value>State</value>
+  </data>
+  <data name="lblApellido" xml:space="preserve">
+    <value>Suname</value>
+  </data>
+  <data name="lblContraseña" xml:space="preserve">
+    <value>Password</value>
   </data>
   <data name="lblCorreo" xml:space="preserve">
     <value>Mail</value>
@@ -189,7 +198,13 @@
   <data name="lblDireccion" xml:space="preserve">
     <value>Direction</value>
   </data>
+  <data name="lblNombre" xml:space="preserve">
+    <value>Name</value>
+  </data>
   <data name="lblNombreEmpresa" xml:space="preserve">
     <value>Company name</value>
+  </data>
+  <data name="lblUsuario" xml:space="preserve">
+    <value>User</value>
   </data>
 </root>
