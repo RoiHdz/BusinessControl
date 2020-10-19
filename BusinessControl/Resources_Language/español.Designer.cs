@@ -205,7 +205,7 @@ namespace BusinessControl.Resources_Language {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a CONTRASEÑA.
+        ///   Busca una cadena traducida similar a CONTRASENA.
         /// </summary>
         internal static string txtPassword {
             get {

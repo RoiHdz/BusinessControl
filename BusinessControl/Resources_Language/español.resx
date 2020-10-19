@@ -142,7 +142,7 @@
     <value>Has olvidado la contraseña?</value>
   </data>
   <data name="txtPassword" xml:space="preserve">
-    <value>CONTRASEÑA</value>
+    <value>CONTRASENA</value>
   </data>
   <data name="txtUsuario" xml:space="preserve">
     <value>USUARIO</value>
