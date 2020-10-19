@@ -137,6 +137,14 @@ namespace BusinessControl
 
         private void btnPrimerUso_Click(object sender, EventArgs e)
         {
+            if (RdEspañol.Checked == true || (RdEspañol.Checked == false && RdEnglish.Checked == false))
+            {
+                MainController.idioma = 1;
+            }
+            else
+            {
+                MainController.idioma = 2;
+            }
             this.Hide();
             FrmPrimerUso mainMenu = new FrmPrimerUso();
             mainMenu.Show();
@@ -146,6 +154,14 @@ namespace BusinessControl
 
         private void btnRegistrarUsuario_Click(object sender, EventArgs e)
         {
+            if (RdEspañol.Checked == true || (RdEspañol.Checked == false && RdEnglish.Checked == false))
+            {
+                MainController.idioma = 1;
+            }
+            else
+            {
+                MainController.idioma = 2;
+            }
             this.Hide();
             FrmRegistroUsuario mainMenu = new FrmRegistroUsuario();
             mainMenu.Show();
